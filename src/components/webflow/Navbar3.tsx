@@ -141,7 +141,7 @@ export default function Navbar3() {
                   <div data-delay="0" data-hover="false" data-w-id="8f60835e-aa4c-4f6c-810a-14b7d8cd82d0" className="dropdown-menu-v3---brix w-dropdown">
                     <div className="nav-link---brix w-dropdown-toggle">
                       <div className="dropdown-menu-text---brix">
-                        For Agents
+                        For Brokers
                       </div>
                       <div className="dropdown-icon---brix w-icon-dropdown-toggle"></div>
                     </div>
@@ -172,7 +172,7 @@ export default function Navbar3() {
                                 </svg>
                               </div>
                               <div className="title---brix">
-                                Corporate packege
+                                Corporate package
                               </div>
                             </a>
                           </div>

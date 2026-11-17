@@ -158,7 +158,7 @@ export default function S01DivPart05() {
                                 </svg>
                               </div>
                               <div className="title---brix">
-                                Corporate packege
+                                Corporate package
                               </div>
                             </a>
                           </div>

@@ -2,3 +2,93 @@
 @layer theme, base, components, utilities;
 @import "tailwindcss/theme.css" layer(theme);
 @import "tailwindcss/utilities.css" layer(utilities);
+
+/* ── Mobile menu (≤991px), all site headers ────────────────────────────────
+   Webflow's dropdowns become plain sections: group title as a small label,
+   its pages listed under it, everything visible at once. The panel takes
+   the header's own colors (dark headers: black, light header: white). */
+@media screen and (max-width: 991px) {
+  html body .w-nav {
+    --mm-bg: #000; --mm-fg: #fff; --mm-muted: rgba(255, 255, 255, .5); --mm-line: rgba(255, 255, 255, .12);
+    --mm-btn-bg: #fff; --mm-btn-fg: #000;
+  }
+  html body .w-nav.naubar-ecosystem:not(.black) {
+    --mm-bg: #fff; --mm-fg: #121212; --mm-muted: rgba(18, 18, 18, .5); --mm-line: rgba(18, 18, 18, .1);
+    --mm-btn-bg: #121212; --mm-btn-fg: #fff;
+  }
+  /* logo and menu button stay above the open panel */
+  html body .w-nav .w-nav-brand { position: relative; z-index: 40; }
+  html body .w-nav .w-nav-button, html body .w-nav .w-nav-button.w--open { position: relative; z-index: 40; }
+
+  /* the panel */
+  html body .w-nav .w-nav-menu[data-nav-menu-open] {
+    display: flex !important; flex-direction: column; align-items: stretch; justify-content: flex-start;
+    position: fixed; inset: 0; width: 100%; height: 100dvh; margin: 0;
+    padding: 88px 20px calc(28px + env(safe-area-inset-bottom, 0px));
+    background: var(--mm-bg); color: var(--mm-fg); text-align: left; overflow-y: auto; z-index: 30;
+  }
+  html body .w-nav .w-nav-menu .nav-link.hidden,
+  html body .w-nav .w-nav-menu .nav-link.hide { display: none !important; }
+
+  /* groups */
+  html body .w-nav .nav-menu---brix {
+    display: flex; flex-direction: column; align-items: stretch; gap: 0; width: 100%;
+    max-height: none; margin: 0; overflow: visible; font-family: Inter, sans-serif;
+  }
+  html body .w-nav .header-navigation---brix {
+    display: block; width: 100%; margin: 0; padding: 18px 0; border-bottom: 1px solid var(--mm-line);
+  }
+  html body .w-nav .header-navigation---brix:first-child { padding-top: 0; }
+  html body .w-nav .nav-item-wrapper---brix,
+  html body .w-nav .dropdown-menu-v3---brix { display: block; width: 100%; margin: 0; position: static; }
+
+  /* group title */
+  html body .w-nav .w-dropdown-toggle {
+    display: block; padding: 0 0 6px; pointer-events: none; cursor: default;
+    color: var(--mm-muted); font: 600 12px/1.4 Inter, sans-serif; letter-spacing: .08em; text-transform: uppercase;
+  }
+  html body .w-nav .w-dropdown-toggle .dropdown-menu-text---brix { margin: 0; color: inherit; }
+  html body .w-nav .dropdown-icon---brix { display: none; }
+
+  /* group pages: always shown */
+  html body .w-nav .w-dropdown-list {
+    display: block !important; position: static !important; inset: auto !important; opacity: 1 !important; transform: none !important;
+    height: auto !important; min-width: 0; max-width: none; margin: 0 !important; padding: 0;
+    background: transparent; border: 0; border-radius: 0; box-shadow: none; overflow: visible;
+  }
+  html body .w-nav .dropdown-nav-main-wrapper-v3---brix { display: block; padding: 0; }
+  html body .w-nav .dropdown-nav-container-v3---brix,
+  html body .w-nav .dropdown-nav-container-v3---brix.change-by-the-size-of-your-container {
+    display: flex; flex-direction: column; gap: 0; grid-template-columns: none;
+  }
+  html body .w-nav .dropdown-nav-pages-wrapper-v3---brix { padding: 0; margin: 0; background: transparent; border-radius: 0; }
+  html body .w-nav .dropdown-button-v3---brix {
+    align-items: center; gap: 12px; padding: 10px 0; color: var(--mm-fg);
+    font: 500 17px/1.3 Inter, sans-serif; text-decoration: none;
+  }
+  html body .w-nav .dropdown-button-v3---brix .code-embed-27 { color: var(--mm-muted); }
+
+  /* single link sections (For Developer) */
+  html body .w-nav .dropdown-menu-v3---brix > a.nav-link---brix {
+    display: flex; padding: 4px 0; color: var(--mm-fg); text-decoration: none; overflow: visible;
+  }
+  html body .w-nav .dropdown-menu-v3---brix > a.nav-link---brix .dropdown-menu-text---brix {
+    margin: 0; color: inherit; font: 600 17px/1.3 Inter, sans-serif;
+  }
+
+  /* buttons */
+  html body .w-nav .nav-link-buttons {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 10px; width: 100%; margin-top: 24px;
+  }
+  html body .w-nav .nav-link-buttons .nav-link-button {
+    display: flex; justify-content: center; align-items: center; width: auto; height: 48px; margin: 0;
+    border: 1px solid var(--mm-fg); border-radius: 10px; color: var(--mm-fg); background: transparent;
+    font: 600 15px/1 Inter, sans-serif;
+  }
+  html body .w-nav .nav-link-buttons .nav-link-button.white {
+    background: var(--mm-btn-bg); color: var(--mm-btn-fg); border-color: var(--mm-btn-bg);
+  }
+}
+@media screen and (max-width: 359px) {
+  html body .w-nav .nav-link-buttons { grid-template-columns: 1fr; }
+}
