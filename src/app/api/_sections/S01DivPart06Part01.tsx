@@ -76,15 +76,12 @@ export default function S01DivPart06Part01() {
           </a>
         </div>
         <div className="footer-menu-block">
-          <a href="/investor" className="link-9">
-            For investors
+          <a href="/about-company" className="link-9">
+            About us
           </a>
           <div className="footer-menu-links-block">
             <a href="/tether-and-reelly" className="menu_text">
               About Tether
-            </a>
-            <a href="/tether-and-reelly" className="menu_text">
-              For investors
             </a>
             <a href="/blog" className="menu_text">
               Blog

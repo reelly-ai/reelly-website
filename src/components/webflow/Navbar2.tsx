@@ -60,9 +60,6 @@ export default function Navbar2() {
             <a href="/agent" aria-current="page" className="nav-link mignait-blue ecosystem white hidden w-nav-link w--current">
               For Agents
             </a>
-            <a href="/investor" className="nav-link mignait-blue ecosystem white hidden w-nav-link">
-              For Investors
-            </a>
             <a href="/careers" className="nav-link mignait-blue ecosystem white hidden w-nav-link">
               Careers
             </a>
@@ -82,20 +79,6 @@ export default function Navbar2() {
                     <nav className="dropdown-list-v3---brix w-dropdown-list">
                       <div className="dropdown-nav-main-wrapper-v3---brix">
                         <div className="dropdown-nav-container-v3---brix change-by-the-size-of-your-container">
-                          <div className="dropdown-nav-pages-wrapper-v3---brix">
-                            <a href="/about-company" className="dropdown-button-v3---brix w-inline-block">
-                              <div className="code-embed-27 w-embed">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                  {" "}
-                                  <path d="M7.3335 11.3332L8.66683 12.6665C8.79815 12.7978 8.95405 12.902 9.12563 12.9731C9.29721 13.0441 9.48111 13.0807 9.66683 13.0807C9.85255 13.0807 10.0364 13.0441 10.208 12.9731C10.3796 12.902 10.5355 12.7978 10.6668 12.6665C10.7982 12.5352 10.9023 12.3793 10.9734 12.2077C11.0445 12.0361 11.081 11.8522 11.081 11.6665C11.081 11.4808 11.0445 11.2969 10.9734 11.1253C10.9023 10.9537 10.7982 10.7978 10.6668 10.6665M9.33365 9.33318L11.0003 10.9998C11.2655 11.2651 11.6252 11.4141 12.0003 11.4141C12.3754 11.4141 12.7351 11.2651 13.0003 10.9998C13.2655 10.7346 13.4145 10.3749 13.4145 9.99985C13.4145 9.62477 13.2655 9.26506 13.0003 8.99985L10.4136 6.41318C10.0386 6.03865 9.53032 5.82827 9.00031 5.82827C8.47031 5.82827 7.96198 6.03865 7.58698 6.41318L7.00031 6.99985C6.7351 7.26506 6.37539 7.41406 6.00031 7.41406C5.62524 7.41406 5.26553 7.26506 5.00031 6.99985C4.7351 6.73463 4.5861 6.37492 4.5861 5.99985C4.5861 5.62477 4.7351 5.26506 5.00031 4.99985L6.87365 3.12651C7.48181 2.51994 8.27491 2.13355 9.12741 2.0285C9.9799 1.92344 10.8431 2.10573 11.5803 2.54651L11.8936 2.73318C12.1775 2.90451 12.515 2.96393 12.8403 2.89985L14.0003 2.66651M14.0002 1.99984L14.6668 9.33317H13.3335M2.00016 1.99984L1.3335 9.33317L5.66683 13.6665C5.93205 13.9317 6.29176 14.0807 6.66683 14.0807C7.0419 14.0807 7.40161 13.9317 7.66683 13.6665C7.93205 13.4013 8.08104 13.0416 8.08104 12.6665C8.08104 12.2914 7.93205 11.9317 7.66683 11.6665M2.00016 2.6665H7.3335" stroke="currentcolor" strokeWidth="1.33" strokeLinecap="round" strokeLinejoin="round"></path>
-                                  {" "}
-                                </svg>
-                              </div>
-                              <div>
-                                For investors
-                              </div>
-                            </a>
-                          </div>
                           <div className="dropdown-nav-pages-wrapper-v3---brix">
                             <a href="/tether-and-reelly" className="dropdown-button-v3---brix w-inline-block">
                               <div className="code-embed-27 w-embed">

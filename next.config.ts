@@ -10,6 +10,8 @@ const legacy: [string, string][] = [
   ["/old-home", "/"],
   // /buyers (old buyer beta page) was removed; it is not offered any more.
   ["/buyers", "/"],
+  // /investor is hidden (source kept in src/app/_hidden/investor).
+  ["/investor", "/"],
   ["/old-home-3", "/"],
   ["/old-home-4", "/"],
   ["/lending-for-the-developer", "/for-developer"],
