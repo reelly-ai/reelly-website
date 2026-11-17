@@ -4,7 +4,7 @@ export default function S01CopyMe() {
       <div className="form-navbar smaller">
         <div className="container-8">
           <div className="footer-flex-container-2">
-            <a href="/buyers" id="w-node-df9eb063-2576-3ad7-177b-22b5877040d3-eba61e97" className="brand-2 w-nav-brand">
+            <a href="/" id="w-node-df9eb063-2576-3ad7-177b-22b5877040d3-eba61e97" className="brand-2 w-nav-brand">
               <img src="/cdn/6297c98631a984c162542adb/62cd5b307ea6f83ab2ffe65a_logo-reelly.png" loading="lazy" width="120" alt="" />
             </a>
             <a href="/password/sign-up" className="dashboard-link">

@@ -22,9 +22,6 @@ export default function Navbar2() {
             <a href="/for-developer" id="reelly.io-developer" className="nav-link mignait-blue ecosystem hide w-nav-link">
               For Developers
             </a>
-            <a href="/buyers" className="nav-link mignait-blue ecosystem hide w-nav-link">
-              For Buyers
-            </a>
             <a href="/for-developer" className="nav-link mignait-blue ecosystem w-nav-link">
               For Developer
             </a>

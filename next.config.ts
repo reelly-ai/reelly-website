@@ -6,8 +6,10 @@ const CANONICAL = "https://reelly.ai";
 // Old Webflow 301s (Site settings → Publishing → 301 redirects), with chains collapsed
 // to their final page. Targets that no longer exist go to the home page.
 const legacy: [string, string][] = [
-  ["/for-agent", "/buyers"],
-  ["/old-home", "/buyers"],
+  ["/for-agent", "/agent"],
+  ["/old-home", "/"],
+  // /buyers (old buyer beta page) was removed; it is not offered any more.
+  ["/buyers", "/"],
   ["/old-home-3", "/"],
   ["/old-home-4", "/"],
   ["/lending-for-the-developer", "/for-developer"],
