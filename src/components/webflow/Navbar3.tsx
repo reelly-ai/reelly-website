@@ -230,7 +230,7 @@ export default function Navbar3() {
               <ul role="list" className="header-navigation---brix w-list-unstyled">
                 <li className="nav-item-wrapper---brix">
                   <div className="dropdown-menu-v3---brix">
-                    <a href="/for-developer" className="nav-link---brix w-inline-block">
+                    <a href="/for-developer" className="nav-link---brix w-inline-block" style={{ textDecoration: "none" }}>
                       <div className="dropdown-menu-text---brix">For Developer</div>
                     </a>
                   </div>

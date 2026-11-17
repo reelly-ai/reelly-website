@@ -33,3 +33,4 @@ Forms
 - Memberstack forms (`data-ms-form`) are not touched.
 - The developer landing (`/for-developer`) is a standalone page: `public/brm/index.html` + `public/brm/img/`, served by a rewrite in `next.config.ts`. Its two forms post to `/api/forms` as "BRM demo call" and "BRM free listing" (fall back to a mailto to info@reelly.ai if that fails).
 - All other developer URLs (brm-for-developer, colsulting, consulting, white-label…) 301 to `/for-developer`.
+- Its header (between `<!-- SITE HEADER` and `<!-- /SITE HEADER -->` in `public/brm/index.html`) is a copy of `src/components/webflow/Navbar.tsx` with the home page header styles, in a shadow root so webflow.css and the landing CSS stay apart; a small script there replaces the Webflow runtime (dropdowns, mobile menu). The right-hand buttons are "List project free" (#list) and "Book a demo call" (#demo). When the site menu changes, update this copy too.
