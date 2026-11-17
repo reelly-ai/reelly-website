@@ -1,45 +1,85 @@
 import { NextResponse } from "next/server";
 
-// Receives submissions from the site's forms and forwards them to Zapier.
+// Receives submissions from every form on the site and forwards them server-to-server
+// to the Reelly Integrations service (POST /webhooks/website), which creates the
+// Kommo CRM lead in the right pipeline and stage. No third-party relay (Zapier etc.).
 //
-// Env vars (set in Vercel → Project → Settings → Environment Variables):
-//   ZAPIER_WEBHOOK_URL               default "Catch Hook" URL for every form
-//   ZAPIER_WEBHOOK_<FORM_NAME>       optional per-form URL; FORM_NAME is the form's
-//                                    data-name in upper case with non-letters → "_",
-//                                    e.g. ZAPIER_WEBHOOK_CONTACT_FORM
-const envKey = (form: string) =>
-  "ZAPIER_WEBHOOK_" + form.toUpperCase().replace(/[^A-Z0-9]+/g, "_").replace(/^_|_$/g, "");
+// Env vars (Vercel → Project → Settings → Environment Variables):
+//   INTEGRATIONS_URL              base URL of the Integrations service, e.g. https://….up.railway.app
+//   INTEGRATIONS_WEBHOOK_SECRET   same value as WEBSITE_WEBHOOK_SECRET on the Integrations service
+
+type Field = { name: string; label: string; placeholder?: string; type: string; value: string };
+type Body = {
+  submission_id?: string;
+  form?: string;
+  page?: string;
+  fields?: Field[] | Record<string, string>;
+  utm?: Record<string, string>;
+  hp?: string;
+};
+
+const clip = (v: unknown, n: number) => String(v ?? "").slice(0, n);
+
+// Accepts the Webflow bridge's field list and the BRM landing's plain {key: value} object.
+function normalizeFields(fields: Body["fields"]): Field[] {
+  if (Array.isArray(fields)) {
+    return fields.slice(0, 60).map((f) => ({
+      name: clip(f?.name, 100),
+      label: clip(f?.label, 200),
+      placeholder: clip(f?.placeholder, 200),
+      type: clip(f?.type, 20),
+      value: clip(f?.value, 5000),
+    }));
+  }
+  return Object.entries(fields ?? {})
+    .slice(0, 60)
+    .map(([k, v]) => ({ name: clip(k, 100), label: clip(k, 200), type: /email/i.test(k) ? "email" : /phone/i.test(k) ? "tel" : "text", value: clip(v, 5000) }));
+}
 
 export async function POST(req: Request) {
-  let body: { form?: string; page?: string; fields?: Record<string, string>; hp?: string };
+  let body: Body;
   try {
     body = await req.json();
   } catch {
     return NextResponse.json({ ok: false, error: "bad_request" }, { status: 400 });
   }
-  const form = (body.form || "Unnamed form").slice(0, 100);
   // Honeypot: real people never fill this hidden field.
   if (body.hp) return NextResponse.json({ ok: true });
 
-  const url = process.env[envKey(form)] || process.env.ZAPIER_WEBHOOK_URL;
-  if (!url) {
-    console.error(`No Zapier webhook configured for form "${form}" (${envKey(form)} / ZAPIER_WEBHOOK_URL)`);
+  const base = process.env.INTEGRATIONS_URL;
+  const secret = process.env.INTEGRATIONS_WEBHOOK_SECRET;
+  if (!base || !secret) {
+    console.error("Forms: INTEGRATIONS_URL / INTEGRATIONS_WEBHOOK_SECRET are not configured");
     return NextResponse.json({ ok: false, error: "not_configured" }, { status: 500 });
   }
 
+  const utm = Object.fromEntries(
+    Object.entries(body.utm ?? {})
+      .filter(([k]) => k.startsWith("utm_"))
+      .map(([k, v]) => [clip(k, 30), clip(v, 250)]),
+  );
   const payload = {
-    form_name: form,
-    page_url: body.page ?? "",
+    submission_id: clip(body.submission_id || crypto.randomUUID(), 64),
+    form: clip(body.form || "Unnamed form", 100),
+    page_url: clip(body.page, 500),
     submitted_at: new Date().toISOString(),
-    ...Object.fromEntries(Object.entries(body.fields ?? {}).map(([k, v]) => [k, String(v).slice(0, 5000)])),
+    fields: normalizeFields(body.fields),
+    utm,
   };
-  const res = await fetch(url, {
-    method: "POST",
-    headers: { "content-type": "application/json" },
-    body: JSON.stringify(payload),
-  });
-  if (!res.ok) {
-    console.error(`Zapier responded ${res.status} for form "${form}"`);
+
+  try {
+    const res = await fetch(new URL("/webhooks/website", base), {
+      method: "POST",
+      headers: { "content-type": "application/json", authorization: `Bearer ${secret}` },
+      body: JSON.stringify(payload),
+      signal: AbortSignal.timeout(20000),
+    });
+    if (!res.ok) {
+      console.error(`Forms: Integrations responded ${res.status} for "${payload.form}" (${payload.submission_id})`);
+      return NextResponse.json({ ok: false, error: "upstream" }, { status: 502 });
+    }
+  } catch (err) {
+    console.error(`Forms: Integrations unreachable for "${payload.form}" (${payload.submission_id})`, err);
     return NextResponse.json({ ok: false, error: "upstream" }, { status: 502 });
   }
   return NextResponse.json({ ok: true });

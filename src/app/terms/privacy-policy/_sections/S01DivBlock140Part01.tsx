@@ -19,8 +19,8 @@ export default function S01DivBlock140Part01() {
       <br />
       <br />
       {"By registering on the website "}
-      <a href="https://www.reelly.ai/">
-        https://www.reelly.ai/
+      <a href="https://reelly.ai/">
+        https://reelly.ai/
       </a>
       , or by visiting the Site without registering, the User grants consent to the collection and processing of their personal data and grants the Site Operator the right to take other actions with respect to Personal Data as provided for in this Policy.
       <br />

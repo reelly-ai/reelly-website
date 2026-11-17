@@ -18,7 +18,7 @@ Structure
 - Blocks shared by many pages (navbars, footer…) live in `src/components/webflow/`.
 - Styles: the original Webflow stylesheet is `public/legacy/webflow.css`, page custom CSS is in `public/legacy/css/`. Tailwind utilities are available for new work (no preflight, so Webflow styles are untouched).
 - Images, fonts and videos from the Webflow CDN are in `public/cdn/`.
-- `src/components/LegacyWebflow.tsx` runs the original Webflow runtime (interactions, sliders, dropdowns, forms) and the site's integrations: GTM, Mixpanel, Meta Pixel, Wized, Finsweet, Weglot. Each page lists its scripts in the `page.scripts` array; custom code from Webflow is in `public/legacy/js/inline-*.js`.
+- `src/components/LegacyWebflow.tsx` runs the original Webflow runtime (interactions, sliders, dropdowns, forms) and the site's integrations: GTM, Mixpanel, Meta Pixel, Wized, Finsweet. (Weglot was removed: the site is English only.) Each page lists its scripts in the `page.scripts` array; custom code from Webflow is in `public/legacy/js/inline-*.js`.
 
 Migration rules
 - Keep class names when editing Webflow markup; webflow.css and the interactions depend on them.
@@ -27,6 +27,10 @@ Migration rules
 - The product app (sign in/up) is a separate site: soft.reelly.io.
 
 Forms
-- Webflow forms are intercepted by `src/lib/formBridge.ts` and posted to `src/app/api/forms/route.ts`, which forwards them to Zapier ("Webhooks by Zapier → Catch Hook").
-- Env vars: `ZAPIER_WEBHOOK_URL` (default) and optional `ZAPIER_WEBHOOK_<FORM_NAME>` per form (form `data-name`, upper case, non-letters → `_`, e.g. `ZAPIER_WEBHOOK_CONTACT_FORM`).
+- Webflow forms are intercepted by `src/lib/formBridge.ts` and posted to `src/app/api/forms/route.ts`, which forwards them server-to-server to the Reelly Integrations service (`POST /webhooks/website`, repo "Reelly Integrations & Automatiosation", module `integrations/website_kommo.py`). That service creates the Kommo CRM lead; which pipeline/stage each form lands in is the `ROUTES` table there, keyed by the form's `data-name`. No Zapier.
+- Env vars: `INTEGRATIONS_URL` (service base URL) and `INTEGRATIONS_WEBHOOK_SECRET` (= `WEBSITE_WEBHOOK_SECRET` on the service).
+- A new form needs a unique `data-name` and a route in `ROUTES`; unknown forms still arrive in Kommo (Support / Incoming request, tag `site form: <name>`).
 - Memberstack forms (`data-ms-form`) are not touched.
+- The developer landing (`/for-developer`) is a standalone page: `public/brm/index.html` + `public/brm/img/`, served by a rewrite in `next.config.ts`. Its two forms post to `/api/forms` as "BRM demo call" and "BRM free listing" (fall back to a mailto to info@reelly.ai if that fails).
+- All other developer URLs (brm-for-developer, colsulting, consulting, white-label…) 301 to `/for-developer`.
+- Its header (between `<!-- SITE HEADER` and `<!-- /SITE HEADER -->` in `public/brm/index.html`) is a copy of `src/components/webflow/Navbar.tsx` with the home page header styles, in a shadow root so webflow.css and the landing CSS stay apart; a small script there replaces the Webflow runtime (dropdowns, mobile menu). The right-hand buttons are "List project free" (#list) and "Book a demo call" (#demo). When the site menu changes, update this copy too.

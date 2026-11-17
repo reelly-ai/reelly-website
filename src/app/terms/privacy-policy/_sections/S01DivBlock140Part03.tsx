@@ -287,8 +287,8 @@ export default function S01DivBlock140Part03() {
         {"6.3. "}
       </strong>
       {"Detailed information about the types of cookies used, their retention periods, the tracking technologies applied, and the third parties using cookies on the Platform is set out in a separate Cookie Policy, available at: "}
-      <a href="https://www.reelly.ai/terms/cookie-policy">
-        https://www.reelly.ai/terms/cookie-policy
+      <a href="https://reelly.ai/terms/cookie-policy">
+        https://reelly.ai/terms/cookie-policy
         <br />
         ‍
       </a>

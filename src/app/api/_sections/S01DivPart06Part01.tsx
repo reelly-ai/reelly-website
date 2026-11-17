@@ -33,7 +33,7 @@ export default function S01DivPart06Part01() {
       </div>
       <div className="eco_soci_block">
         <div id="w-node-_5d72a9f7-2edc-5a34-f1ed-e64bc84c9b99-c84c9b86" className="menu_block">
-          <a href="/old-home-4" className="menu_text">
+          <a href="/" className="menu_text">
             Home page
           </a>
           <a href="/api-extended" className="menu_text">
@@ -76,17 +76,14 @@ export default function S01DivPart06Part01() {
           </a>
         </div>
         <div className="footer-menu-block">
-          <a href="/investor" className="link-9">
-            For investors
+          <a href="/about-company" className="link-9">
+            About us
           </a>
           <div className="footer-menu-links-block">
             <a href="/tether-and-reelly" className="menu_text">
               About Tether
             </a>
-            <a href="/tether-and-reelly" className="menu_text">
-              For investors
-            </a>
-            <a href="/old-home-4" className="menu_text">
+            <a href="/blog" className="menu_text">
               Blog
             </a>
             <a href="/contact-us" className="menu_text">
@@ -99,11 +96,11 @@ export default function S01DivPart06Part01() {
             For Agents
           </a>
           <div className="footer-menu-links-block">
-            <a href="/old-home-4" className="menu_text">
+            <a href="/agent" className="menu_text">
               Tool for agents
             </a>
             <a href="/agency" className="menu_text">
-              Corporate packege
+              Corporate package
             </a>
             <a href="/api-extended" className="menu_text">
               API database Off Plan
@@ -117,14 +114,6 @@ export default function S01DivPart06Part01() {
           <a href="/for-developer" className="link-9">
             For Developer
           </a>
-          <div className="footer-menu-links-block">
-            <a href="https://soft.reelly.io/add-a-project" className="menu_text">
-              Add project
-            </a>
-            <a href="https://www.reelly.ai/brm-for-developer" className="menu_text">
-              Add Developer
-            </a>
-          </div>
         </div>
       </div>
       <div id="w-node-_5d72a9f7-2edc-5a34-f1ed-e64bc84c9bad-c84c9b86" className="phone_block">

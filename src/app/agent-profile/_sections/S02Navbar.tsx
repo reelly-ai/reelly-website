@@ -28,23 +28,6 @@ export default function S02Navbar() {
             <a href="#" className="nav-link mignait-blue w-nav-link">
               Webinars
             </a>
-            <div data-w-id="33c85ffc-50b0-9e82-5804-a1526ae145da" className="wg-element-wrapper sw3">
-              <a lang="en" data-w-id="33c85ffc-50b0-9e82-5804-a1526ae145db" href="#" className="wg-selector-2 s1 w-inline-block">
-                <div className="wg-selector-2-fill f1"></div>
-                <div className="wg-selector2-text-lang1">
-                  EN
-                </div>
-              </a>
-              <a lang="ru" data-w-id="33c85ffc-50b0-9e82-5804-a1526ae145df" href="#" className="wg-selector-2 s2 w-inline-block">
-                <div className="wg-selector-2-fill f2"></div>
-                <div className="wg-selector2-text-lang2">
-                  RU
-                </div>
-              </a>
-              <div className="wg-code w-embed w-script">
-                {" "}
-              </div>
-            </div>
           </nav>
           <div className="profile-butoom">
             <a data-ms-content="!members" href="/password/sign-up" className="header-button registration w-button">

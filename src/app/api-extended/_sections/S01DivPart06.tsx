@@ -7,14 +7,11 @@ export default function S01DivPart06() {
             <img src="/cdn/6297c98631a984c162542adb/6771bf0f715ad11e8ebc97e0_Logo-White.svg" loading="lazy" height="Auto" alt="" className="reelly-logo" />
           </a>
           <nav role="navigation" className="nav-menu hero w-nav-menu">
-            <a href="/company" className="nav-link mignait-blue ecosystem white hidden w-nav-link">
+            <a href="/about-company" className="nav-link mignait-blue ecosystem white hidden w-nav-link">
               Company
             </a>
             <a href="/agent" className="nav-link mignait-blue ecosystem white hidden w-nav-link">
               For Agents
-            </a>
-            <a href="/investor" className="nav-link mignait-blue ecosystem white hidden w-nav-link">
-              For Investors
             </a>
             <a href="/careers" className="nav-link mignait-blue ecosystem white hidden w-nav-link">
               Careers
@@ -35,20 +32,6 @@ export default function S01DivPart06() {
                     <nav className="dropdown-list-v3---brix w-dropdown-list">
                       <div className="dropdown-nav-main-wrapper-v3---brix">
                         <div className="dropdown-nav-container-v3---brix change-by-the-size-of-your-container">
-                          <div className="dropdown-nav-pages-wrapper-v3---brix">
-                            <a href="/about-company" className="dropdown-button-v3---brix w-inline-block">
-                              <div className="code-embed-27 w-embed">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                  {" "}
-                                  <path d="M7.3335 11.3332L8.66683 12.6665C8.79815 12.7978 8.95405 12.902 9.12563 12.9731C9.29721 13.0441 9.48111 13.0807 9.66683 13.0807C9.85255 13.0807 10.0364 13.0441 10.208 12.9731C10.3796 12.902 10.5355 12.7978 10.6668 12.6665C10.7982 12.5352 10.9023 12.3793 10.9734 12.2077C11.0445 12.0361 11.081 11.8522 11.081 11.6665C11.081 11.4808 11.0445 11.2969 10.9734 11.1253C10.9023 10.9537 10.7982 10.7978 10.6668 10.6665M9.33365 9.33318L11.0003 10.9998C11.2655 11.2651 11.6252 11.4141 12.0003 11.4141C12.3754 11.4141 12.7351 11.2651 13.0003 10.9998C13.2655 10.7346 13.4145 10.3749 13.4145 9.99985C13.4145 9.62477 13.2655 9.26506 13.0003 8.99985L10.4136 6.41318C10.0386 6.03865 9.53032 5.82827 9.00031 5.82827C8.47031 5.82827 7.96198 6.03865 7.58698 6.41318L7.00031 6.99985C6.7351 7.26506 6.37539 7.41406 6.00031 7.41406C5.62524 7.41406 5.26553 7.26506 5.00031 6.99985C4.7351 6.73463 4.5861 6.37492 4.5861 5.99985C4.5861 5.62477 4.7351 5.26506 5.00031 4.99985L6.87365 3.12651C7.48181 2.51994 8.27491 2.13355 9.12741 2.0285C9.9799 1.92344 10.8431 2.10573 11.5803 2.54651L11.8936 2.73318C12.1775 2.90451 12.515 2.96393 12.8403 2.89985L14.0003 2.66651M14.0002 1.99984L14.6668 9.33317H13.3335M2.00016 1.99984L1.3335 9.33317L5.66683 13.6665C5.93205 13.9317 6.29176 14.0807 6.66683 14.0807C7.0419 14.0807 7.40161 13.9317 7.66683 13.6665C7.93205 13.4013 8.08104 13.0416 8.08104 12.6665C8.08104 12.2914 7.93205 11.9317 7.66683 11.6665M2.00016 2.6665H7.3335" stroke="currentcolor" strokeWidth="1.33" strokeLinecap="round" strokeLinejoin="round"></path>
-                                  {" "}
-                                </svg>
-                              </div>
-                              <div>
-                                For investors
-                              </div>
-                            </a>
-                          </div>
                           <div className="dropdown-nav-pages-wrapper-v3---brix">
                             <a href="/tether-and-reelly" className="dropdown-button-v3---brix w-inline-block">
                               <div className="code-embed-27 w-embed">
@@ -175,7 +158,7 @@ export default function S01DivPart06() {
                                 </svg>
                               </div>
                               <div className="title---brix">
-                                Corporate packege
+                                Corporate package
                               </div>
                             </a>
                           </div>
@@ -215,105 +198,10 @@ export default function S01DivPart06() {
               </ul>
               <ul role="list" className="header-navigation---brix w-list-unstyled">
                 <li className="nav-item-wrapper---brix">
-                  <div data-delay="0" data-hover="false" data-w-id="04f4892d-9ea2-b29b-a4f7-90e19e11a7b1" className="dropdown-menu-v3---brix w-dropdown">
-                    <div className="nav-link---brix w-dropdown-toggle">
-                      <div className="dropdown-menu-text---brix">
-                        For Developer
-                      </div>
-                      <div className="dropdown-icon---brix w-icon-dropdown-toggle"></div>
-                    </div>
-                    <nav className="dropdown-list-v3---brix w-dropdown-list">
-                      <div className="dropdown-nav-main-wrapper-v3---brix">
-                        <div className="dropdown-nav-container-v3---brix change-by-the-size-of-your-container">
-                          <div className="dropdown-nav-pages-wrapper-v3---brix">
-                            <a href="https://soft.reelly.io/add-a-project" className="dropdown-button-v3---brix w-inline-block">
-                              <div className="code-embed-27 w-embed">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                  {" "}
-                                  <g clipPath="url(#clip0_2292_1189)">
-                                    {" "}
-                                    <path d="M10.0002 8.00016V12.0002M8.00016 10.0002H12.0002M2.66683 10.6668C1.9335 10.6668 1.3335 10.0668 1.3335 9.3335V2.66683C1.3335 1.9335 1.9335 1.3335 2.66683 1.3335H9.3335C10.0668 1.3335 10.6668 1.9335 10.6668 2.66683M6.66683 5.3335H13.3335C14.0699 5.3335 14.6668 5.93045 14.6668 6.66683V13.3335C14.6668 14.0699 14.0699 14.6668 13.3335 14.6668H6.66683C5.93045 14.6668 5.3335 14.0699 5.3335 13.3335V6.66683C5.3335 5.93045 5.93045 5.3335 6.66683 5.3335Z" stroke="currentcolor" strokeWidth="1.33" strokeLinecap="round" strokeLinejoin="round"></path>
-                                    {" "}
-                                  </g>
-                                  {" "}
-                                  <defs>
-                                    {" "}
-                                    <clipPath id="clip0_2292_1189">
-                                      {" "}
-                                      <rect width="16" height="16" fill="currentcolor"></rect>
-                                      {" "}
-                                    </clipPath>
-                                    {" "}
-                                  </defs>
-                                  {" "}
-                                </svg>
-                              </div>
-                              <div className="title---brix">
-                                Add project
-                              </div>
-                            </a>
-                          </div>
-                          <div className="dropdown-nav-pages-wrapper-v3---brix">
-                            <a href="https://www.reelly.ai/brm-for-developer" className="dropdown-button-v3---brix w-inline-block">
-                              <div className="code-embed-27 w-embed">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                  {" "}
-                                  <path d="M14 8.00016V12.6668C14 13.0205 13.8595 13.3596 13.6095 13.6096C13.3594 13.8597 13.0203 14.0002 12.6667 14.0002H3.33333C2.97971 14.0002 2.64057 13.8597 2.39052 13.6096C2.14048 13.3596 2 13.0205 2 12.6668V3.3335C2 2.97987 2.14048 2.64074 2.39052 2.39069C2.64057 2.14064 2.97971 2.00016 3.33333 2.00016H8M10.6667 3.3335H14.6667M12.6667 1.3335V5.3335M14 10.0001L11.9427 7.94279C11.6926 7.69283 11.3536 7.55241 11 7.55241C10.6464 7.55241 10.3074 7.69283 10.0573 7.94279L4 14.0001M7.33333 6.00016C7.33333 6.73654 6.73638 7.3335 6 7.3335C5.26362 7.3335 4.66667 6.73654 4.66667 6.00016C4.66667 5.26378 5.26362 4.66683 6 4.66683C6.73638 4.66683 7.33333 5.26378 7.33333 6.00016Z" stroke="currentcolor" strokeWidth="1.33" strokeLinecap="round" strokeLinejoin="round"></path>
-                                  {" "}
-                                </svg>
-                              </div>
-                              <div className="title---brix">
-                                Add Developer
-                              </div>
-                            </a>
-                          </div>
-                          <div className="dropdown-nav-pages-wrapper-v3---brix">
-                            <a href="/colsulting" className="dropdown-button-v3---brix w-inline-block">
-                              <div className="icon-embed-xsmall w-embed">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none" preserveAspectRatio="xMidYMid meet" aria-hidden="true" role="img">
-                                  {" "}
-                                  <path d="M12 12H12.01M16 6V4C16 3.46957 15.7893 2.96086 15.4142 2.58579C15.0391 2.21071 14.5304 2 14 2H10C9.46957 2 8.96086 2.21071 8.58579 2.58579C8.21071 2.96086 8 3.46957 8 4V6M22 13C19.0328 14.959 15.5555 16.0033 12 16.0033C8.44445 16.0033 4.96721 14.959 2 13M4 6H20C21.1046 6 22 6.89543 22 8V18C22 19.1046 21.1046 20 20 20H4C2.89543 20 2 19.1046 2 18V8C2 6.89543 2.89543 6 4 6Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
-                                  {" "}
-                                </svg>
-                              </div>
-                              <div className="title---brix">
-                                Consulting
-                              </div>
-                            </a>
-                          </div>
-                          <div className="dropdown-nav-pages-wrapper-v3---brix">
-                            <a href="/white-label" className="dropdown-button-v3---brix w-inline-block">
-                              <div className="icon-embed-xsmall-2 w-embed">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" viewBox="0 0 24 24" fill="none" preserveAspectRatio="xMidYMid meet" aria-hidden="true" role="img">
-                                  {" "}
-                                  <path d="M13.5 7C13.7761 7 14 6.77614 14 6.5C14 6.22386 13.7761 6 13.5 6C13.2239 6 13 6.22386 13 6.5C13 6.77614 13.2239 7 13.5 7Z" fill="currentColor"></path>
-                                  {" "}
-                                  <path d="M17.5 11C17.7761 11 18 10.7761 18 10.5C18 10.2239 17.7761 10 17.5 10C17.2239 10 17 10.2239 17 10.5C17 10.7761 17.2239 11 17.5 11Z" fill="currentColor"></path>
-                                  {" "}
-                                  <path d="M8.5 8C8.77614 8 9 7.77614 9 7.5C9 7.22386 8.77614 7 8.5 7C8.22386 7 8 7.22386 8 7.5C8 7.77614 8.22386 8 8.5 8Z" fill="currentColor"></path>
-                                  {" "}
-                                  <path d="M6.5 13C6.77614 13 7 12.7761 7 12.5C7 12.2239 6.77614 12 6.5 12C6.22386 12 6 12.2239 6 12.5C6 12.7761 6.22386 13 6.5 13Z" fill="currentColor"></path>
-                                  {" "}
-                                  <path d="M13.5 7C13.7761 7 14 6.77614 14 6.5C14 6.22386 13.7761 6 13.5 6C13.2239 6 13 6.22386 13 6.5C13 6.77614 13.2239 7 13.5 7Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
-                                  {" "}
-                                  <path d="M17.5 11C17.7761 11 18 10.7761 18 10.5C18 10.2239 17.7761 10 17.5 10C17.2239 10 17 10.2239 17 10.5C17 10.7761 17.2239 11 17.5 11Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
-                                  {" "}
-                                  <path d="M8.5 8C8.77614 8 9 7.77614 9 7.5C9 7.22386 8.77614 7 8.5 7C8.22386 7 8 7.22386 8 7.5C8 7.77614 8.22386 8 8.5 8Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
-                                  {" "}
-                                  <path d="M6.5 13C6.77614 13 7 12.7761 7 12.5C7 12.2239 6.77614 12 6.5 12C6.22386 12 6 12.2239 6 12.5C6 12.7761 6.22386 13 6.5 13Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
-                                  {" "}
-                                  <path d="M12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22C12.926 22 13.648 21.254 13.648 20.312C13.648 19.875 13.468 19.477 13.211 19.187C12.921 18.898 12.773 18.535 12.773 18.062C12.7692 17.8419 12.8098 17.6233 12.8922 17.4192C12.9747 17.2151 13.0975 17.0298 13.2531 16.8741C13.4088 16.7185 13.5941 16.5957 13.7982 16.5132C14.0023 16.4308 14.2209 16.3902 14.441 16.394H16.437C19.488 16.394 21.992 13.891 21.992 10.84C21.965 6.012 17.461 2 12 2Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
-                                  {" "}
-                                </svg>
-                              </div>
-                              <div className="title---brix">
-                                White Label
-                              </div>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </nav>
+                  <div className="dropdown-menu-v3---brix">
+                    <a href="/for-developer" className="nav-link---brix w-inline-block" style={{ textDecoration: "none" }}>
+                      <div className="dropdown-menu-text---brix">For Developer</div>
+                    </a>
                   </div>
                 </li>
               </ul>
