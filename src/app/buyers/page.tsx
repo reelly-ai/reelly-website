@@ -96,13 +96,6 @@ const page: LegacyPage = {
       "src": "/legacy/js/finsweetcomponentsconfig-1.0.103.js"
     },
     {
-      "src": "https://cdn.weglot.com/weglot.min.js"
-    },
-    {
-      "src": "/legacy/js/inline-b8cc7c9a2d.js",
-      "inline": true
-    },
-    {
       "type": "application/json",
       "src": "/legacy/js/inline-daadc94b79.js",
       "inline": true

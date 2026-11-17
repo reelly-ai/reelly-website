@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://reelly.io"),
+  metadataBase: new URL("https://reelly.ai"),
   title: "Reelly",
 };
 

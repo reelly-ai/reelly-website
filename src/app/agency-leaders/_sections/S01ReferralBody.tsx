@@ -9,7 +9,6 @@ import S01ReferralBodyPart08 from "./S01ReferralBodyPart08";
 import S01ReferralBodyPart09 from "./S01ReferralBodyPart09";
 import S01ReferralBodyPart10 from "./S01ReferralBodyPart10";
 import S01ReferralBodyPart11 from "./S01ReferralBodyPart11";
-import S01ReferralBodyPart12 from "./S01ReferralBodyPart12";
 
 export default function S01ReferralBody() {
   return (
@@ -25,7 +24,6 @@ export default function S01ReferralBody() {
       <S01ReferralBodyPart09 />
       <S01ReferralBodyPart10 />
       <S01ReferralBodyPart11 />
-      <S01ReferralBodyPart12 />
     </div>
   );
 }

@@ -7,7 +7,7 @@ export default function Navbar3() {
             <img src="/cdn/6297c98631a984c162542adb/674268efbf449b09ece4f6c1_Logo.svg" loading="lazy" height="Auto" alt="" className="reelly-logo" />
           </a>
           <nav role="navigation" className="nav-menu hero w-nav-menu">
-            <a href="/company" className="nav-link mignait-blue ecosystem white hidden w-nav-link">
+            <a href="/about-company" className="nav-link mignait-blue ecosystem white hidden w-nav-link">
               Company
             </a>
             <a href="/agent" className="nav-link mignait-blue ecosystem white hidden w-nav-link">
@@ -229,89 +229,10 @@ export default function Navbar3() {
               </ul>
               <ul role="list" className="header-navigation---brix w-list-unstyled">
                 <li className="nav-item-wrapper---brix">
-                  <div data-delay="0" data-hover="false" data-w-id="620aab7c-c76d-a186-dd8a-6410f7b10851" className="dropdown-menu-v3---brix w-dropdown">
-                    <div className="nav-link---brix w-dropdown-toggle">
-                      <div className="dropdown-menu-text---brix">
-                        For Developer
-                      </div>
-                      <div className="dropdown-icon---brix w-icon-dropdown-toggle"></div>
-                    </div>
-                    <nav className="dropdown-list-v3---brix w-dropdown-list">
-                      <div className="dropdown-nav-main-wrapper-v3---brix">
-                        <div className="dropdown-nav-container-v3---brix change-by-the-size-of-your-container">
-                          <div className="dropdown-nav-pages-wrapper-v3---brix">
-                            <a href="/for-developer" className="dropdown-button-v3---brix w-inline-block">
-                              <div className="code-embed-27 w-embed">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                  {" "}
-                                  <g clipPath="url(#clip0_2292_854)">
-                                    {" "}
-                                    <path d="M1.3335 12.0002H2.26683C3.1335 12.0002 3.9335 11.6002 4.46683 10.8668L8.5335 5.1335C9.00016 4.40016 9.86683 4.00016 10.7335 4.00016H14.6668M14.6668 4.00016L12.0002 1.3335M14.6668 4.00016L12.0002 6.66683M1.3335 4.00016H2.60016C3.60016 4.00016 4.5335 4.60016 5.00016 5.46683M14.6667 12.0001H10.7334C9.8667 12.0001 9.00003 11.5334 8.53337 10.8001L8.20003 10.2668M14.6667 12.0001L12.0002 9.3335M14.6667 12.0001L12.0002 14.6668" stroke="currentcolor" strokeWidth="1.33" strokeLinecap="round" strokeLinejoin="round"></path>
-                                    {" "}
-                                  </g>
-                                  {" "}
-                                  <defs>
-                                    {" "}
-                                    <clipPath id="clip0_2292_854">
-                                      {" "}
-                                      <rect width="16" height="16" fill="currentcolor"></rect>
-                                      {" "}
-                                    </clipPath>
-                                    {" "}
-                                  </defs>
-                                  {" "}
-                                </svg>
-                              </div>
-                              <div className="title---brix">
-                                BRM
-                              </div>
-                            </a>
-                          </div>
-                          <div className="dropdown-nav-pages-wrapper-v3---brix">
-                            <a href="https://soft.reelly.io/add-a-project" className="dropdown-button-v3---brix w-inline-block">
-                              <div className="code-embed-27 w-embed">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                  {" "}
-                                  <g clipPath="url(#clip0_2292_1189)">
-                                    {" "}
-                                    <path d="M10.0002 8.00016V12.0002M8.00016 10.0002H12.0002M2.66683 10.6668C1.9335 10.6668 1.3335 10.0668 1.3335 9.3335V2.66683C1.3335 1.9335 1.9335 1.3335 2.66683 1.3335H9.3335C10.0668 1.3335 10.6668 1.9335 10.6668 2.66683M6.66683 5.3335H13.3335C14.0699 5.3335 14.6668 5.93045 14.6668 6.66683V13.3335C14.6668 14.0699 14.0699 14.6668 13.3335 14.6668H6.66683C5.93045 14.6668 5.3335 14.0699 5.3335 13.3335V6.66683C5.3335 5.93045 5.93045 5.3335 6.66683 5.3335Z" stroke="currentcolor" strokeWidth="1.33" strokeLinecap="round" strokeLinejoin="round"></path>
-                                    {" "}
-                                  </g>
-                                  {" "}
-                                  <defs>
-                                    {" "}
-                                    <clipPath id="clip0_2292_1189">
-                                      {" "}
-                                      <rect width="16" height="16" fill="currentcolor"></rect>
-                                      {" "}
-                                    </clipPath>
-                                    {" "}
-                                  </defs>
-                                  {" "}
-                                </svg>
-                              </div>
-                              <div className="title---brix">
-                                Add project
-                              </div>
-                            </a>
-                          </div>
-                          <div className="dropdown-nav-pages-wrapper-v3---brix">
-                            <a href="https://www.reelly.ai/brm-for-developer" className="dropdown-button-v3---brix w-inline-block">
-                              <div className="code-embed-27 w-embed">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                  {" "}
-                                  <path d="M14 8.00016V12.6668C14 13.0205 13.8595 13.3596 13.6095 13.6096C13.3594 13.8597 13.0203 14.0002 12.6667 14.0002H3.33333C2.97971 14.0002 2.64057 13.8597 2.39052 13.6096C2.14048 13.3596 2 13.0205 2 12.6668V3.3335C2 2.97987 2.14048 2.64074 2.39052 2.39069C2.64057 2.14064 2.97971 2.00016 3.33333 2.00016H8M10.6667 3.3335H14.6667M12.6667 1.3335V5.3335M14 10.0001L11.9427 7.94279C11.6926 7.69283 11.3536 7.55241 11 7.55241C10.6464 7.55241 10.3074 7.69283 10.0573 7.94279L4 14.0001M7.33333 6.00016C7.33333 6.73654 6.73638 7.3335 6 7.3335C5.26362 7.3335 4.66667 6.73654 4.66667 6.00016C4.66667 5.26378 5.26362 4.66683 6 4.66683C6.73638 4.66683 7.33333 5.26378 7.33333 6.00016Z" stroke="currentcolor" strokeWidth="1.33" strokeLinecap="round" strokeLinejoin="round"></path>
-                                  {" "}
-                                </svg>
-                              </div>
-                              <div className="title---brix">
-                                Add Developer
-                              </div>
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </nav>
+                  <div className="dropdown-menu-v3---brix">
+                    <a href="/for-developer" className="nav-link---brix w-inline-block">
+                      <div className="dropdown-menu-text---brix">For Developer</div>
+                    </a>
                   </div>
                 </li>
               </ul>

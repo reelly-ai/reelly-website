@@ -241,8 +241,8 @@ export default function S01RichTextBlock4() {
       </p>
       <p>
         {"4.1. The Website Operator reserves the right to change and update this Policy at any time in accordance with applicable law. Changes to this Policy may be required when updating legislation, expanding or changing the functionality of the Website The User undertakes to regularly monitor changes and be guided by the version of the Policy posted in the footer of the Website "}
-        <a href="https://www.reelly.ai/">
-          https://www.reelly.ai/
+        <a href="https://reelly.ai/">
+          https://reelly.ai/
         </a>
         .
       </p>

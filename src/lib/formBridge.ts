@@ -1,7 +1,47 @@
 // Takes over Webflow form submissions (which only work on Webflow hosting) and sends
-// them to /api/forms, which forwards to Zapier. Keeps Webflow's success/error blocks
+// them to /api/forms, which forwards to the Integrations service (→ Kommo CRM). Keeps Webflow's success/error blocks
 // (.w-form-done / .w-form-fail) and the form's redirect setting.
 // Memberstack login/sign-up forms (data-ms-form) are left alone.
+
+export type FormField = { name: string; label: string; placeholder?: string; type: string; value: string };
+
+// Human-readable label of a field: <label for>, data-name, name.
+function fieldLabel(el: HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement): string {
+  const byFor = el.id ? el.form?.querySelector<HTMLLabelElement>(`label[for="${CSS.escape(el.id)}"]`) : null;
+  return (byFor?.textContent?.trim() || el.getAttribute("data-name") || el.name).trim();
+}
+
+function formFields(form: HTMLFormElement): FormField[] {
+  const out: FormField[] = [];
+  for (const el of Array.from(form.elements)) {
+    if (!(el instanceof HTMLInputElement || el instanceof HTMLSelectElement || el instanceof HTMLTextAreaElement)) continue;
+    if (!el.name || el.disabled || el.name === "cf-turnstile-response" || el.name === "_hp") continue;
+    if (el instanceof HTMLInputElement && ["submit", "button", "password", "file"].includes(el.type)) continue;
+    if (el instanceof HTMLInputElement && ["checkbox", "radio"].includes(el.type) && !el.checked) continue;
+    const type = el instanceof HTMLTextAreaElement ? "textarea" : el instanceof HTMLSelectElement ? "select" : el.type;
+    const placeholder = el instanceof HTMLSelectElement ? "" : el.placeholder;
+    out.push({ name: el.name, label: fieldLabel(el), placeholder, type, value: el.value });
+  }
+  return out;
+}
+
+// Posts a submission to /api/forms, which forwards it to the Integrations service → Kommo.
+export function sendForm(form: string, fields: FormField[], hp?: string) {
+  const utm: Record<string, string> = {};
+  for (const [k, v] of new URLSearchParams(location.search)) if (k.startsWith("utm_")) utm[k] = v;
+  return fetch("/api/forms", {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    body: JSON.stringify({
+      submission_id: crypto.randomUUID(),
+      form,
+      page: location.href,
+      fields,
+      utm,
+      hp,
+    }),
+  }).catch(() => ({ ok: false }) as Response);
+}
 
 export function installFormBridge() {
   const w = window as unknown as { __formBridge?: boolean };
@@ -29,27 +69,12 @@ export function installFormBridge() {
       }
       if (fail) fail.style.display = "none";
 
-      const fields: Record<string, string> = {};
-      new FormData(form).forEach((v, k) => {
-        if (typeof v !== "string" || k === "cf-turnstile-response" || k === "_hp") return;
-        fields[k] = fields[k] ? `${fields[k]}, ${v}` : v;
-      });
-      for (const [k, v] of new URLSearchParams(location.search)) if (k.startsWith("utm_")) fields[k] = v;
-
-      let ok = false;
-      try {
-        const res = await fetch("/api/forms", {
-          method: "POST",
-          headers: { "content-type": "application/json" },
-          body: JSON.stringify({
-            form: form.getAttribute("data-name") || form.name || form.id,
-            page: location.href,
-            fields,
-            hp: (form.querySelector<HTMLInputElement>('input[name="_hp"]') || {}).value,
-          }),
-        });
-        ok = res.ok;
-      } catch {}
+      const res = await sendForm(
+        form.getAttribute("data-name") || form.name || form.id,
+        formFields(form),
+        form.querySelector<HTMLInputElement>('input[name="_hp"]')?.value,
+      );
+      const ok = res.ok;
 
       if (button) {
         button.disabled = false;

@@ -118,7 +118,7 @@ export default function S11Section() {
                   </div>
                 </div>
                 <div className="agent-botton-wrapper">
-                  <a href="/agents/svitlana-lvitsyna" className="button-dark-agent w-button">
+                  <a href="/agent-profile" className="button-dark-agent w-button">
                     View profile
                   </a>
                 </div>
