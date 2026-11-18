@@ -27,7 +27,7 @@ export default function S01BodyAgentsPart01() {
                 </div>
               </div>
               <h1 data-w-id="793d3249-7b51-20b8-5e5d-ab285da0d23b" style={{ opacity: "0", WebkitTransform: "translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)", MozTransform: "translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)", msTransform: "translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)", transform: "translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" }} className="agents-hero-h1">
-                AI Ecosystem For Real Estate Sellers
+                Off-Plan Data Provider for Humans and AI Agents
               </h1>
               <p data-w-id="32532ed5-4b0f-4260-0639-d5e05046c9c0" style={{ opacity: "0", WebkitTransform: "translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)", MozTransform: "translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)", msTransform: "translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)", transform: "translate3d(0, 10px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" }} className="agents-hero-paragraph">
                 We have created the largest real estate community in the GCC to achieve new sales records through our IT ecosystem
@@ -80,7 +80,7 @@ export default function S01BodyAgentsPart01() {
                 1,856
               </div>
               <div>
-                exclusive off-plan
+                off-plan projects
               </div>
             </div>
             <div id="w-node-_22e403af-2eb4-2536-69ad-8f8c3b946785-40ab0fc8" data-w-id="22e403af-2eb4-2536-69ad-8f8c3b946785" style={{ opacity: "0" }} className="agent-grid-number-block">
@@ -88,7 +88,7 @@ export default function S01BodyAgentsPart01() {
                 66,666
               </div>
               <div>
-                Registered agents
+                Registered brokers
               </div>
             </div>
           </div>

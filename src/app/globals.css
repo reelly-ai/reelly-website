@@ -92,3 +92,10 @@
 @media screen and (max-width: 359px) {
   html body .w-nav .nav-link-buttons { grid-template-columns: 1fr; }
 }
+
+/* Home hero: the headline "Off-Plan Data Provider for Humans and AI Agents" is longer than the
+   old one, so its column is wider (two lines on desktop instead of four). */
+html body .agents-section.white-txt .agents-hero-h1 { max-width: 820px; text-wrap: balance; }
+@media screen and (max-width: 767px) {
+  html body .agents-section.white-txt .agents-hero-h1 { max-width: 340px; }
+}
