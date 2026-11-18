@@ -50,7 +50,7 @@
 .rmcp-installs { display: flex; gap: 10px; flex-wrap: wrap; }
 .rmcp-btn {
   display: inline-flex; align-items: center; gap: 10px; height: 46px; padding: 0 18px;
-  border-radius: 10px; font-size: 15px; font-weight: 600; text-decoration: none; transition: transform .15s, opacity .15s;
+  border: 0; border-radius: 10px; font-family: inherit; font-size: 15px; font-weight: 600; text-decoration: none; cursor: pointer; transition: transform .15s, opacity .15s;
 }
 .rmcp-btn:hover { transform: translateY(-1px); }
 .rmcp-btn:focus-visible, .rmcp-copy:focus-visible, .rmcp-api:focus-visible { outline: 2px solid var(--indigo-soft); outline-offset: 2px; }
@@ -130,3 +130,91 @@
   .rmcp-btn, .rmcp-api { transition: none; }
   .rmcp-btn:hover { transform: none; }
 }
+
+/* ── "Connect Reelly AI" dialog (McpInstallModal.tsx): white Dialog from the design, indigo instead of lime ── */
+.rmcp-modal {
+  width: min(560px, calc(100vw - 32px)); max-width: none; max-height: calc(100dvh - 32px);
+  padding: 0; border: 0; border-radius: 16px; background: #ffffff; color: #09090b;
+  box-shadow: 0 24px 64px rgba(9, 9, 11, .35); overflow: auto; overscroll-behavior: contain;
+  font-family: Inter, system-ui, sans-serif; text-align: left;
+}
+.rmcp-modal::backdrop { background: rgba(9, 9, 11, .6); backdrop-filter: blur(2px); }
+.rmcp-modal[open] { animation: rmcp-m-in .18s ease-out; }
+@keyframes rmcp-m-in { from { opacity: 0; transform: translateY(8px) scale(.98); } to { opacity: 1; transform: none; } }
+.rmcp-m-body { position: relative; display: flex; flex-direction: column; gap: 16px; padding: 24px; }
+.rmcp-m-close {
+  position: absolute; top: 14px; right: 14px; display: flex; align-items: center; justify-content: center;
+  width: 32px; height: 32px; padding: 0; border: 0; border-radius: 8px; background: transparent; color: #52525b; cursor: pointer;
+}
+.rmcp-m-close:hover { background: #f4f4f5; color: #09090b; }
+.rmcp-m-title {
+  display: flex; align-items: center; gap: 10px; margin: 0; padding-right: 36px;
+  font-family: Inter, system-ui, sans-serif; text-transform: none; letter-spacing: -0.2px;
+  font-size: 18px; line-height: 1.3; font-weight: 600; color: #09090b;
+}
+.rmcp-m-logos { display: flex; flex-shrink: 0; }
+.rmcp-m-disc {
+  display: flex; align-items: center; justify-content: center; width: 24px; height: 24px;
+  border: 2px solid #ffffff; border-radius: 999px; color: #ffffff; box-sizing: border-box;
+}
+.rmcp-m-disc-claude { background: #d97757; }
+.rmcp-m-disc-gpt { background: #09090b; margin-left: -6px; }
+.rmcp-m-desc { margin: -8px 0 0; font-size: 14px; line-height: 20px; color: #71717a; }
+.rmcp-m-steps { display: flex; flex-direction: column; gap: 12px; margin: 0; padding: 0; list-style: none; }
+.rmcp-m-step { display: flex; gap: 12px; margin: 0; }
+.rmcp-m-step p { margin: 0; font-size: 14px; line-height: 20px; color: #3f3f46; }
+.rmcp-m-step b { font-weight: 600; color: #09090b; }
+.rmcp-m-num {
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0; width: 24px; height: 24px;
+  border-radius: 999px; background: #3c5dff; color: #ffffff; font-size: 12px; font-weight: 700;
+}
+.rmcp-m-field { display: flex; flex-direction: column; gap: 6px; }
+.rmcp-m-label { margin: 0; font-size: 11px; font-weight: 600; letter-spacing: .8px; text-transform: uppercase; color: #71717a; }
+.rmcp-m-url {
+  display: flex; align-items: center; gap: 4px; padding: 4px 4px 4px 12px;
+  border: 1px solid #e4e4e7; border-radius: 12px; background: #ffffff;
+}
+.rmcp-m-url code {
+  flex: 1; min-width: 0; padding: 8px 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 14px; color: #09090b; background: none;
+}
+.rmcp-m-url button {
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0; width: 36px; height: 36px;
+  padding: 0; border: 0; border-radius: 8px; background: transparent; color: #3f3f46; cursor: pointer;
+}
+.rmcp-m-url button:hover { background: #f4f4f5; }
+.rmcp-m-prompt { padding: 12px; border: 1px solid #e4e4e7; border-radius: 12px; background: #fafafa; }
+.rmcp-m-prompt pre {
+  max-height: 160px; margin: 6px 0 0; padding: 0; overflow-y: auto; white-space: pre-wrap; word-break: break-word;
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; line-height: 1.6; color: #3f3f46; background: none; border: 0;
+}
+.rmcp-m-prompt pre:focus-visible { outline: 2px solid #3c5dff; outline-offset: 2px; border-radius: 4px; }
+.rmcp-m-free { padding: 10px 12px; border-radius: 12px; background: #eef1ff; color: #1e2a80; font-size: 12px; line-height: 18px; }
+.rmcp-m-free b { font-weight: 700; }
+.rmcp-m-primary {
+  display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; height: 44px;
+  border: 0; border-radius: 12px; background: #3c5dff; color: #ffffff; cursor: pointer;
+  font-family: inherit; font-size: 15px; font-weight: 600;
+}
+.rmcp-m-primary:hover { background: #2f4ee6; }
+.rmcp-m-foot {
+  position: sticky; bottom: -24px; z-index: 1; display: flex; flex-direction: column; gap: 8px;
+  margin: -4px -24px -24px; padding: 12px 24px 24px; background: #ffffff; border-top: 1px solid #f4f4f5;
+}
+.rmcp-m-open { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.rmcp-m-outline {
+  display: flex; align-items: center; justify-content: center; gap: 8px; height: 44px;
+  border: 1px solid #e4e4e7; border-radius: 10px; background: #ffffff; color: #09090b;
+  font-size: 14px; font-weight: 600; text-decoration: none;
+}
+.rmcp-m-outline:hover { background: #f4f4f5; }
+.rmcp-m-close:focus-visible, .rmcp-m-url button:focus-visible, .rmcp-m-primary:focus-visible, .rmcp-m-outline:focus-visible {
+  outline: 2px solid #3c5dff; outline-offset: 2px;
+}
+@media screen and (max-width: 767px) {
+  .rmcp-modal { width: 100vw; max-height: 92dvh; margin: auto 0 0; border-radius: 16px 16px 0 0; }
+  .rmcp-m-body { padding: 20px 16px calc(24px + env(safe-area-inset-bottom, 0px)); }
+  .rmcp-m-open { grid-template-columns: 1fr; }
+  .rmcp-m-foot { bottom: calc(-24px - env(safe-area-inset-bottom, 0px)); margin: -4px -16px calc(-24px - env(safe-area-inset-bottom, 0px)); padding: 12px 16px calc(16px + env(safe-area-inset-bottom, 0px)); }
+}
+@media (prefers-reduced-motion: reduce) { .rmcp-modal[open] { animation: none; } }

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import "./McpBlock.css";
+import McpInstallModal, { BrandMark, MCP_SERVER_URL, type McpClient } from "./McpInstallModal";
 
 const s = {
   accent: "rmcp-accent",
@@ -52,10 +53,8 @@ const s = {
 // TODO(live stats): the numbers below are a snapshot from the design board. They should come
 // from catalogue_stats (same source as GET /api/mcp/home), which today needs a signed-in session.
 // If the stats request fails, hide the catalogue cards instead of showing zeros.
-const MCP_URL = "https://mcp.reelly.io/mcp/";
-// Install buttons open the MCP page in the product: sign in / sign up first, then connect.
-const INSTALL_CLAUDE = "https://find.reelly.io/mcp";
-const INSTALL_CHATGPT = "https://find.reelly.io/mcp";
+const MCP_URL = MCP_SERVER_URL;
+// Install buttons open the "Connect Reelly AI" dialog with the setup prompt (McpInstallModal.tsx).
 const API_PAGE = "/api-extended";
 
 const catalogue = [
@@ -92,6 +91,7 @@ const Arrow = () => (
 
 export default function McpBlock() {
   const [copied, setCopied] = useState(false);
+  const [install, setInstall] = useState<McpClient | null>(null);
   const copy = async () => {
     try {
       await navigator.clipboard.writeText(MCP_URL);
@@ -118,19 +118,14 @@ export default function McpBlock() {
               Connect Reelly to Claude or ChatGPT in one click, right here. Start free with 1,000 requests, +2,000 for a verified profile.
             </p>
             <div className={s.installs}>
-              <a href={INSTALL_CLAUDE} target="_blank" rel="noopener" className={`${s.btn} ${s.btnClaude}`}>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                  <path d="M12 2l1.8 6.2L20 10l-6.2 1.8L12 18l-1.8-6.2L4 10l6.2-1.8z" />
-                </svg>
-                Install in Claude <Arrow />
-              </a>
-              <a href={INSTALL_CHATGPT} target="_blank" rel="noopener" className={`${s.btn} ${s.btnLight}`}>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <circle cx="12" cy="12" r="9" />
-                  <path d="M8 12h8M12 8v8" />
-                </svg>
-                Install in ChatGPT <Arrow />
-              </a>
+              <button type="button" onClick={() => setInstall("claude")} className={`${s.btn} ${s.btnClaude}`} aria-haspopup="dialog">
+                <BrandMark which="claude" />
+                Install in Claude
+              </button>
+              <button type="button" onClick={() => setInstall("chatgpt")} className={`${s.btn} ${s.btnLight}`} aria-haspopup="dialog">
+                <BrandMark which="chatgpt" />
+                Install in ChatGPT
+              </button>
             </div>
             <div>
               <div className={s.smallLabel} id="mcp-manual">OR ADD IT MANUALLY IN ANY MCP CLIENT</div>
@@ -220,6 +215,7 @@ export default function McpBlock() {
           </div>
         </div>
       </div>
+      <McpInstallModal client={install} onClose={() => setInstall(null)} />
     </section>
   );
 }
