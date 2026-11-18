@@ -1,0 +1,132 @@
+/* Reelly MCP Server · API block (class prefix rmcp-; CSS modules do not work with the Tailwind turbopack rule in next.config.ts). Site indigo (#3C5DFF) instead of the board's lime.
+   Same container as the rest of the home page: 1100px, 24px gutters (16px at ≤991px). */
+.rmcp-section {
+  --indigo: #3c5dff;
+  --indigo-soft: #93a6ff; /* indigo text on the dark card, AA on #0b0b0c */
+  --ink: #ffffff;
+  --muted: #a1a1aa;
+  --faint: #71717a;
+  --line: #27272a;
+  --claude: #d97757;
+  position: relative;
+  z-index: 5;
+  isolation: isolate;
+  background: #ffffff;
+  padding: 40px 0 72px;
+  font-family: Inter, system-ui, sans-serif;
+}
+.rmcp-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+.rmcp-card {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 40px;
+  align-items: center;
+  padding: 48px;
+  border-radius: 24px;
+  background: radial-gradient(circle at 0% 0%, #1b2560 0%, #0b0b0c 48%);
+  color: var(--ink);
+  box-sizing: border-box;
+}
+.rmcp-left { display: flex; flex-direction: column; gap: 22px; min-width: 0; }
+.rmcp-right { display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+
+.rmcp-eyebrow {
+  display: flex; align-items: center; gap: 8px;
+  font-size: 12px; font-weight: 700; letter-spacing: 1px; color: var(--indigo-soft);
+}
+.rmcp-eyebrow-small { margin-bottom: 16px; }
+.rmcp-dot { width: 6px; height: 6px; border-radius: 999px; background: var(--indigo); box-shadow: 0 0 0 3px rgba(60, 93, 255, .25); }
+.rmcp-title {
+  margin: 0; font-family: Inter, system-ui, sans-serif; text-transform: none; font-size: 44px; line-height: 1.08; font-weight: 700; letter-spacing: -0.8px;
+  color: var(--ink); text-wrap: balance;
+}
+.rmcp-lede { margin: 0; font-size: 16px; line-height: 24px; color: var(--muted); }
+
+.rmcp-installs { display: flex; gap: 10px; flex-wrap: wrap; }
+.rmcp-btn {
+  display: inline-flex; align-items: center; gap: 10px; height: 46px; padding: 0 18px;
+  border-radius: 10px; font-size: 15px; font-weight: 600; text-decoration: none; transition: transform .15s, opacity .15s;
+}
+.rmcp-btn:hover { transform: translateY(-1px); }
+.rmcp-btn:focus-visible, .rmcp-copy:focus-visible, .rmcp-api:focus-visible { outline: 2px solid var(--indigo-soft); outline-offset: 2px; }
+.rmcp-btn-claude { background: var(--claude); color: #ffffff; }
+.rmcp-btn-light { background: #ffffff; color: #09090b; }
+
+.rmcp-small-label { font-size: 11px; font-weight: 600; letter-spacing: .8px; color: var(--muted); margin-bottom: 8px; }
+.rmcp-url-row {
+  display: flex; align-items: center; justify-content: space-between; gap: 10px;
+  height: 46px; padding: 0 6px 0 14px; max-width: 380px; box-sizing: border-box;
+  border-radius: 10px; background: #ffffff; color: #09090b;
+}
+.rmcp-url { font-family: ui-monospace, Menlo, monospace; font-size: 14px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; user-select: all; }
+.rmcp-copy {
+  flex: none; display: inline-flex; align-items: center; gap: 6px; height: 34px; padding: 0 10px;
+  border: 0; border-radius: 8px; background: #eef1ff; color: var(--indigo); font: 600 13px/1 Inter, sans-serif; cursor: pointer;
+}
+.rmcp-copy:hover { background: #e0e6ff; }
+
+.rmcp-api {
+  display: flex; align-items: center; gap: 14px; padding: 14px 16px; max-width: 460px; box-sizing: border-box;
+  border: 1px solid #3f3f46; border-radius: 14px; background: rgba(255, 255, 255, .03); color: var(--ink); text-decoration: none;
+  transition: border-color .15s;
+}
+.rmcp-api:hover { border-color: var(--indigo); }
+.rmcp-api-icon {
+  flex: none; width: 40px; height: 40px; border-radius: 10px; background: #1c2140; color: var(--indigo-soft);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.rmcp-api-text { flex: 1; min-width: 0; }
+.rmcp-api-title { display: block; font-size: 15px; font-weight: 600; }
+.rmcp-api-sub { display: block; font-size: 13px; color: var(--muted); }
+.rmcp-api-btn {
+  flex: none; display: inline-flex; align-items: center; gap: 6px; height: 36px; padding: 0 14px;
+  border-radius: 9px; background: var(--indigo); color: #ffffff; font-size: 14px; font-weight: 700;
+}
+
+.rmcp-panel { border: 1px solid var(--line); border-radius: 16px; background: rgba(255, 255, 255, .02); padding: 22px 24px; }
+.rmcp-panel-label { font-size: 12px; font-weight: 600; letter-spacing: 1px; color: var(--muted); margin-bottom: 16px; }
+.rmcp-grid3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.rmcp-divided { padding-bottom: 18px; border-bottom: 1px solid var(--line); }
+.rmcp-after { padding-top: 16px; }
+.rmcp-big { font-size: 30px; line-height: 1.1; font-weight: 700; color: var(--ink); font-variant-numeric: tabular-nums; }
+.rmcp-mid { font-size: 20px; line-height: 1.1; font-weight: 700; color: var(--ink); margin-bottom: 4px; font-variant-numeric: tabular-nums; }
+.rmcp-accent { color: var(--indigo-soft); }
+.rmcp-bar { width: 36px; height: 3px; border-radius: 2px; background: var(--indigo); margin: 10px 0 8px; }
+.rmcp-muted { font-size: 13px; line-height: 1.4; color: var(--muted); }
+.rmcp-period { color: var(--faint); }
+.rmcp-emirates-title { font-size: 15px; font-weight: 600; margin-bottom: 10px; }
+.rmcp-chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 0; padding: 0; list-style: none; }
+.rmcp-chip { display: inline-flex; gap: 6px; padding: 5px 10px; border-radius: 8px; background: var(--line); font-size: 13px; color: #d4d4d8; }
+.rmcp-chip strong { color: var(--ink); font-variant-numeric: tabular-nums; }
+
+@media (max-width: 991px) {
+  .rmcp-container { padding: 0 16px; }
+  .rmcp-card { grid-template-columns: 1fr; gap: 28px; padding: 36px 28px; }
+  .rmcp-title { font-size: 36px; }
+  .rmcp-url-row, .rmcp-api { max-width: none; }
+}
+@media (max-width: 767px) {
+  .rmcp-section { padding: 24px 0 48px; }
+  .rmcp-card { padding: 28px 20px; border-radius: 20px; }
+  .rmcp-title { font-size: 28px; letter-spacing: -0.4px; }
+  .rmcp-lede { font-size: 15px; line-height: 22px; }
+  .rmcp-installs .rmcp-btn { flex: 1 1 100%; justify-content: center; }
+  .rmcp-api { flex-wrap: wrap; }
+  .rmcp-api-text { flex: 1 1 calc(100% - 54px); }
+  .rmcp-api-btn { width: 100%; justify-content: center; }
+  .rmcp-panel { padding: 18px; }
+  .rmcp-grid3 { gap: 12px; }
+  .rmcp-big { font-size: 22px; }
+  .rmcp-mid { font-size: 17px; }
+  .rmcp-muted { font-size: 12px; }
+  .rmcp-copy-text { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .rmcp-btn, .rmcp-api { transition: none; }
+  .rmcp-btn:hover { transform: none; }
+}
