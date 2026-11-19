@@ -11,7 +11,7 @@
       const label = (block ? block.textContent : '').toLowerCase();
 
       let val = null;
-      if (label.includes('agent'))                                val = stats.agents;
+      if (label.includes('agent') || label.includes('broker'))    val = stats.agents;
       else if (label.includes('off-plan') || label.includes('project')) val = stats.projects;
       if (val == null) return;
 
