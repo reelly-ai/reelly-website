@@ -8,6 +8,7 @@ import Footer from "@/components/webflow/Footer";
 import S03WEmbed from "./_sections/S03WEmbed";
 
 export const metadata: Metadata = {
+  "alternates": { "canonical": "/blog-posts/reelly-x-ohana-strategic-partnership" },
   "title": "Reelly × Ohana: Strategic Partnership",
   "description": "This collaboration is about building a structured and scalable sales infrastructure for all shareholders.‍",
   "openGraph": {

@@ -8,6 +8,7 @@ import Footer from "@/components/webflow/Footer";
 import S03WEmbed from "./_sections/S03WEmbed";
 
 export const metadata: Metadata = {
+  "alternates": { "canonical": "/blog-posts/reelly-2-5-smarter-faster-more-connected" },
   "title": "Reelly 2.5  Smarter, Faster, More Connected",
   "description": "Enhanced payment logic, flexible sales offers, and direct developer contact for seamless project workflows.",
   "openGraph": {

@@ -4,6 +4,7 @@ import TermsBackButton from "@/components/webflow/TermsBackButton";
 import S01RichTextBlock4 from "./_sections/S01RichTextBlock4";
 
 export const metadata: Metadata = {
+  "alternates": { "canonical": "/terms/cookie-policy" },
   "title": "Cookie Policy",
   "openGraph": {
     "title": "Cookie Policy",

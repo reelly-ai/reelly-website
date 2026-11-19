@@ -4,6 +4,7 @@ import TermsBackButton from "@/components/webflow/TermsBackButton";
 import S01DivBlock140 from "./_sections/S01DivBlock140";
 
 export const metadata: Metadata = {
+  "alternates": { "canonical": "/terms/privacy-policy" },
   "title": "Privacy Policy",
   "openGraph": {
     "title": "Privacy Policy",

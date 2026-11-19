@@ -4,6 +4,7 @@ import TermsBackButton from "@/components/webflow/TermsBackButton";
 import S01DivBlock2 from "./_sections/S01DivBlock2";
 
 export const metadata: Metadata = {
+  "alternates": { "canonical": "/terms/license" },
   "title": "License",
   "openGraph": {
     "title": "License",

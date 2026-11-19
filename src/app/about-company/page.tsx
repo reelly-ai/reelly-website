@@ -5,6 +5,7 @@ import S01ProptechBlock from "./_sections/S01ProptechBlock";
 import Footer from "@/components/webflow/Footer";
 
 export const metadata: Metadata = {
+  "alternates": { "canonical": "/about-company" },
   "title": "Proptech",
   "openGraph": {
     "title": "Proptech",

@@ -5,6 +5,7 @@ import S01GetInTouchSection from "./_sections/S01GetInTouchSection";
 import Footer from "@/components/webflow/Footer";
 
 export const metadata: Metadata = {
+  "alternates": { "canonical": "/contact-us" },
   "title": "Contact us",
   "openGraph": {
     "title": "Contact us",

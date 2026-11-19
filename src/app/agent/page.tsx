@@ -5,6 +5,7 @@ import S01ForAgentSection from "./_sections/S01ForAgentSection";
 import Footer from "@/components/webflow/Footer";
 
 export const metadata: Metadata = {
+  "alternates": { "canonical": "/agent" },
   "title": "For_agent",
   "openGraph": {
     "title": "For_agent",

@@ -4,6 +4,7 @@ import TermsBackButton from "@/components/webflow/TermsBackButton";
 import S01RichTextBlock2 from "./_sections/S01RichTextBlock2";
 
 export const metadata: Metadata = {
+  "alternates": { "canonical": "/terms/terms-of-use" },
   "title": "Terms of use",
   "openGraph": {
     "title": "Terms of use",

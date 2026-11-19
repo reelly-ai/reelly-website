@@ -8,6 +8,7 @@ import S04TetherSection from "./_sections/S04TetherSection";
 import Footer from "@/components/webflow/Footer";
 
 export const metadata: Metadata = {
+  "alternates": { "canonical": "/tether-and-reelly" },
   "title": "tether and reelly",
   "openGraph": {
     "title": "tether and reelly",

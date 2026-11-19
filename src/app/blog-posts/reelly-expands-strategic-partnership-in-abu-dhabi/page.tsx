@@ -8,6 +8,7 @@ import Footer from "@/components/webflow/Footer";
 import S03WEmbed from "./_sections/S03WEmbed";
 
 export const metadata: Metadata = {
+  "alternates": { "canonical": "/blog-posts/reelly-expands-strategic-partnership-in-abu-dhabi" },
   "title": "Reelly Expands Strategic Partnership in Abu Dhabi",
   "description": "Reelly is expanding in Abu Dhabi, strengthening ties with Ohana Development as part of its strategy to build direct partnerships with leading UAE developers.",
   "openGraph": {

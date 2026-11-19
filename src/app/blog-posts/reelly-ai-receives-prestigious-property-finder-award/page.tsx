@@ -8,6 +8,7 @@ import Footer from "@/components/webflow/Footer";
 import S03WEmbed from "./_sections/S03WEmbed";
 
 export const metadata: Metadata = {
+  "alternates": { "canonical": "/blog-posts/reelly-ai-receives-prestigious-property-finder-award" },
   "title": "Reelly AI Receives Prestigious Property Finder Award",
   "description": "Reelly AI has been honored with one of the UAE’s most prestigious awards in the real estate sector — recognition from Property Finder in its category.",
   "openGraph": {
