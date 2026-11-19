@@ -6,6 +6,7 @@ import S02Div from "./_sections/S02Div";
 import Footer from "@/components/webflow/Footer";
 
 export const metadata: Metadata = {
+  "alternates": { "canonical": "/agency" },
   "title": "Agency",
   "openGraph": {
     "title": "Agency",

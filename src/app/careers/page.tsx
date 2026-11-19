@@ -5,6 +5,7 @@ import S01CareersSection from "./_sections/S01CareersSection";
 import Footer from "@/components/webflow/Footer";
 
 export const metadata: Metadata = {
+  "alternates": { "canonical": "/careers" },
   "title": "Careers",
   "openGraph": {
     "title": "Careers",

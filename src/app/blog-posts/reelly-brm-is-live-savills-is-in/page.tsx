@@ -8,6 +8,7 @@ import Footer from "@/components/webflow/Footer";
 import S03WEmbed from "./_sections/S03WEmbed";
 
 export const metadata: Metadata = {
+  "alternates": { "canonical": "/blog-posts/reelly-brm-is-live-savills-is-in" },
   "title": "Reelly Launches BRM: A New Tool for Developers",
   "openGraph": {
     "title": "Reelly Launches BRM: A New Tool for Developers",

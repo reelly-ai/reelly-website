@@ -5,6 +5,7 @@ import S01FormNavbar from "./_sections/S01FormNavbar";
 import S02FlexStackCenter2 from "./_sections/S02FlexStackCenter2";
 
 export const metadata: Metadata = {
+  "alternates": { "canonical": "/password/sign-up" },
   "title": "Password",
   "openGraph": {
     "title": "Password",

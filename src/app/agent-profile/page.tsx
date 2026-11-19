@@ -4,6 +4,7 @@ import S01Navbar from "./_sections/S01Navbar";
 import S02Navbar from "./_sections/S02Navbar";
 
 export const metadata: Metadata = {
+  "alternates": { "canonical": "/agent-profile" },
   "title": "Agent Profile",
   "openGraph": {
     "title": "Agent Profile",

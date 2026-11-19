@@ -8,6 +8,7 @@ import Footer from "@/components/webflow/Footer";
 import S03WEmbed from "./_sections/S03WEmbed";
 
 export const metadata: Metadata = {
+  "alternates": { "canonical": "/blog-posts/a-tool-that-allows" },
   "title": "We are launching a new technology to the market",
   "description": "A tool that allows every user to create their own AI Agent that can think and act.",
   "openGraph": {

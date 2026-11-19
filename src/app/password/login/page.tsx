@@ -3,6 +3,7 @@ import LegacyWebflow, { type LegacyPage } from "@/components/LegacyWebflow";
 import S01CopyMe from "./_sections/S01CopyMe";
 
 export const metadata: Metadata = {
+  "alternates": { "canonical": "/password/login" },
   "title": "Login",
   "openGraph": {
     "title": "Login",

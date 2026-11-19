@@ -8,6 +8,7 @@ import Footer from "@/components/webflow/Footer";
 import S03WEmbed from "./_sections/S03WEmbed";
 
 export const metadata: Metadata = {
+  "alternates": { "canonical": "/blog-posts/reelly-x-easywill-official-partnership" },
   "title": "Reelly × Easywill: Official Partnership",
   "description": "Reelly × Easywill — an official partnership enabling your clients to create legally compliant UAE wills through a fully guided, online process.",
   "openGraph": {

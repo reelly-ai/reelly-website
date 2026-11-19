@@ -3,6 +3,7 @@ import LegacyWebflow, { type LegacyPage } from "@/components/LegacyWebflow";
 import S01Div from "./_sections/S01Div";
 
 export const metadata: Metadata = {
+  "alternates": { "canonical": "/api-extended" },
   "title": "Reelly API – Integration Without Limits",
   "description": "Empower Your Business with Scalable, Structured Data. Integrate verified information that adapts to your needs and grows with you using Reelly API.",
   "openGraph": {

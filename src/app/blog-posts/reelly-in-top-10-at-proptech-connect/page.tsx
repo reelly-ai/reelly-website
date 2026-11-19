@@ -8,6 +8,7 @@ import Footer from "@/components/webflow/Footer";
 import S03WEmbed from "./_sections/S03WEmbed";
 
 export const metadata: Metadata = {
+  "alternates": { "canonical": "/blog-posts/reelly-in-top-10-at-proptech-connect" },
   "title": "Reelly in Top 10 at PropTech Connect",
   "description": "Reelly has been officially recognized among the Top 10 Market Makers at PropTech Connect in Dubai — a key milestone in the company’s global proptech growth.",
   "openGraph": {

@@ -4,6 +4,7 @@ import S01ReferralBody from "./_sections/S01ReferralBody";
 import S02PageLoader from "./_sections/S02PageLoader";
 
 export const metadata: Metadata = {
+  "alternates": { "canonical": "/agency-leaders" },
   "title": "Agency Leaders",
   "openGraph": {
     "title": "Agency Leaders",

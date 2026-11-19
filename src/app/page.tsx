@@ -5,6 +5,7 @@ import S01BodyAgents from "./_sections/S01BodyAgents";
 import Footer from "@/components/webflow/Footer";
 
 export const metadata: Metadata = {
+  "alternates": { "canonical": "/" },
   "title": "AI Ecosystem For Real Estate Sellers",
   "description": "We have created the largest real estate community in the GCC to achieve new sales records through our IT ecosystem",
   "openGraph": {

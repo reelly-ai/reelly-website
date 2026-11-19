@@ -8,6 +8,7 @@ import Footer from "@/components/webflow/Footer";
 import S03WEmbed from "./_sections/S03WEmbed";
 
 export const metadata: Metadata = {
+  "alternates": { "canonical": "/blog-posts/dps-dubais-largest-property-show-is-opening" },
   "title": "DPS: Dubai’s Largest Property Show is Opening",
   "description": "The Dubai real estate market has long been waiting for an offline realization of Reelly’s concept — a space where sales offices of multiple developers are located in one place.",
   "openGraph": {

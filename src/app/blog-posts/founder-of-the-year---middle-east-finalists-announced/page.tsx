@@ -8,6 +8,7 @@ import Footer from "@/components/webflow/Footer";
 import S03WEmbed from "./_sections/S03WEmbed";
 
 export const metadata: Metadata = {
+  "alternates": { "canonical": "/blog-posts/founder-of-the-year---middle-east-finalists-announced" },
   "title": "Founder of the Year – Middle East Finalists Announced",
   "description": "Middle East nominations are closed — Regional Finalists for Founder of the Year are announced, kicking off the next phase toward the global stage‍",
   "openGraph": {
