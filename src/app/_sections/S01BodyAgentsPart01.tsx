@@ -77,7 +77,7 @@ export default function S01BodyAgentsPart01() {
           <div className="w-layout-grid agent-hero-grid _2">
             <div id="w-node-e4252cc3-f7c3-1a70-20cf-e4db671a9ce7-40ab0fc8" data-w-id="e4252cc3-f7c3-1a70-20cf-e4db671a9ce7" style={{ opacity: "0" }} className="agent-grid-number-block">
               <div className="fs-numbercount_number">
-                1,856
+                2,275
               </div>
               <div>
                 off-plan projects
@@ -85,7 +85,7 @@ export default function S01BodyAgentsPart01() {
             </div>
             <div id="w-node-_22e403af-2eb4-2536-69ad-8f8c3b946785-40ab0fc8" data-w-id="22e403af-2eb4-2536-69ad-8f8c3b946785" style={{ opacity: "0" }} className="agent-grid-number-block">
               <div className="fs-numbercount_number">
-                66,666
+                77,668
               </div>
               <div>
                 Registered brokers
