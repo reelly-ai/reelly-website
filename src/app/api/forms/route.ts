@@ -1,4 +1,5 @@
 import { NextResponse } from "next/server";
+import { clientIp, isGibberish, rateLimited } from "@/lib/formSpam";
 
 // Receives submissions from every form on the site and forwards them server-to-server
 // to the Reelly Integrations service (POST /webhooks/website), which creates the
@@ -45,6 +46,17 @@ export async function POST(req: Request) {
   }
   // Honeypot: real people never fill this hidden field.
   if (body.hp) return NextResponse.json({ ok: true });
+
+  const ip = clientIp(req);
+  if (rateLimited(ip)) {
+    console.warn(`Forms: rate limited "${clip(body.form, 100)}" from ${ip}`);
+    return NextResponse.json({ ok: false, error: "rate_limited" }, { status: 429 });
+  }
+  // Bot spam (random strings in every text field): answer ok so the bot doesn't adapt, create no lead.
+  if (isGibberish(normalizeFields(body.fields))) {
+    console.warn(`Forms: spam dropped "${clip(body.form, 100)}" from ${ip}`);
+    return NextResponse.json({ ok: true });
+  }
 
   const base = process.env.INTEGRATIONS_URL;
   const secret = process.env.INTEGRATIONS_WEBHOOK_SECRET;
