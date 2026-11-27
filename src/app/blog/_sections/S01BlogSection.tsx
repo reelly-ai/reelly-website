@@ -46,14 +46,14 @@ export default function S01BlogSection() {
             <div className="w-dyn-list">
               <div role="list" className="w-dyn-items">
                 <div role="listitem" className="w-dyn-item">
-                  <a href="/blog-posts/reelly-mcp-server-dubai-off-plan-claude-chatgpt" className="blog-news-card w-inline-block">
-                    <img src="/news/reelly-mcp-server-dubai-off-plan-claude-chatgpt/cover.jpg" loading="lazy" alt="Reelly MCP Server Is Live: Search Dubai Off-Plan Projects Inside Claude and ChatGPT" className="blog-news-img" />
+                  <a href="/blog-posts/reelly-6-1-new-off-plan-filters-dubai" className="blog-news-card w-inline-block">
+                    <img src="/news/reelly-6-1-new-off-plan-filters-dubai/cover.jpg" loading="lazy" alt="Reelly 6.1: New Off-Plan Filters and Smarter Sales Offers for Dubai Agents" className="blog-news-img" />
                     <div className="blog-news-card-info-block">
                       <div className="blog-articles-category">
-                        Product
+                        Updated
                       </div>
                       <h2 className="blog-h2-block">
-                        Reelly MCP Server Is Live: Search Dubai Off-Plan Projects Inside Claude and ChatGPT
+                        Reelly 6.1: New Off-Plan Filters and Smarter Sales Offers for Dubai Agents
                       </h2>
                       <div className="w-dyn-bind-empty"></div>
                     </div>
@@ -63,6 +63,19 @@ export default function S01BlogSection() {
             </div>
             <div className="collection-list-wrapper-8 w-dyn-list">
               <div role="list" className="w-dyn-items">
+                <div role="listitem" className="w-dyn-item">
+                  <a href="/blog-posts/reelly-6-1-new-off-plan-filters-dubai" className="blog-articles-block _1 w-inline-block">
+                    <img src="/news/reelly-6-1-new-off-plan-filters-dubai/cover.jpg" loading="lazy" alt="Reelly 6.1: New Off-Plan Filters and Smarter Sales Offers for Dubai Agents" className="blog-articles-img" />
+                    <div>
+                      <div className="blog-articles-category">
+                        Updated
+                      </div>
+                      <p className="blog-articles-paragraph">
+                        Reelly 6.1: New Off-Plan Filters and Smarter Sales Offers for Dubai Agents
+                      </p>
+                    </div>
+                  </a>
+                </div>
                 <div role="listitem" className="w-dyn-item">
                   <a href="/blog-posts/reelly-mcp-server-dubai-off-plan-claude-chatgpt" className="blog-articles-block _1 w-inline-block">
                     <img src="/news/reelly-mcp-server-dubai-off-plan-claude-chatgpt/cover.jpg" loading="lazy" alt="Reelly MCP Server Is Live: Search Dubai Off-Plan Projects Inside Claude and ChatGPT" className="blog-articles-img" />
@@ -180,19 +193,6 @@ export default function S01BlogSection() {
                     </div>
                   </a>
                 </div>
-                <div role="listitem" className="w-dyn-item">
-                  <a href="/blog-posts/founder-of-the-year---middle-east-finalists-announced" className="blog-articles-block _1 w-inline-block">
-                    <img src="/cdn/62a47d8c21acef8236283091/699fb5b795bd06dd5bff1c3f_Rectangle-144503.png" loading="lazy" alt="" sizes="(max-width: 767px) 100vw, (max-width: 991px) 95vw, 940px" srcSet="/cdn/62a47d8c21acef8236283091/699fb5b795bd06dd5bff1c3f_Rectangle-144503-p-500.png 500w, /cdn/62a47d8c21acef8236283091/699fb5b795bd06dd5bff1c3f_Rectangle-144503-p-800.png 800w, /cdn/62a47d8c21acef8236283091/699fb5b795bd06dd5bff1c3f_Rectangle-144503-p-1080.png 1080w, /cdn/62a47d8c21acef8236283091/699fb5b795bd06dd5bff1c3f_Rectangle-144503.png 1524w" className="blog-articles-img" />
-                    <div>
-                      <div className="blog-articles-category">
-                        Awards
-                      </div>
-                      <p className="blog-articles-paragraph">
-                        Founder of the Year – Middle East Finalists Announced
-                      </p>
-                    </div>
-                  </a>
-                </div>
               </div>
             </div>
           </div>
@@ -203,6 +203,16 @@ export default function S01BlogSection() {
             <div className="blog-list-articles-block">
               <div className="w-dyn-list">
                 <div role="list" className="w-dyn-items">
+                  <div role="listitem" className="w-dyn-item">
+                    <a href="/blog-posts/reelly-6-1-new-off-plan-filters-dubai" className="blog-articles-block w-inline-block">
+                      <div className="blog-articles-category">
+                        Updated
+                      </div>
+                      <p className="blog-articles-paragraph">
+                        Reelly 6.1: New Off-Plan Filters and Smarter Sales Offers for Dubai Agents
+                      </p>
+                    </a>
+                  </div>
                   <div role="listitem" className="w-dyn-item">
                     <a href="/blog-posts/reelly-mcp-server-dubai-off-plan-claude-chatgpt" className="blog-articles-block w-inline-block">
                       <div className="blog-articles-category">
@@ -290,16 +300,6 @@ export default function S01BlogSection() {
                       </div>
                       <p className="blog-articles-paragraph">
                         Reelly Expands Strategic Partnership in Abu Dhabi
-                      </p>
-                    </a>
-                  </div>
-                  <div role="listitem" className="w-dyn-item">
-                    <a href="/blog-posts/founder-of-the-year---middle-east-finalists-announced" className="blog-articles-block w-inline-block">
-                      <div className="blog-articles-category">
-                        Awards
-                      </div>
-                      <p className="blog-articles-paragraph">
-                        Founder of the Year – Middle East Finalists Announced
                       </p>
                     </a>
                   </div>

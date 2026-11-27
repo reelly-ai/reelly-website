@@ -31,6 +31,34 @@ export default function AgentsSection() {
           <div id="blog-slider" data-w-id="6c59e54c-147c-57a0-9c80-3bd26bf6317e" style={{ opacity: "0" }} className="collection-list-wrapper-6 w-dyn-list">
             <div role="list" className="collection-list-10 w-dyn-items">
               <div role="listitem" className="w-dyn-item">
+                <a href="/blog-posts/reelly-6-1-new-off-plan-filters-dubai" className="agents-blog-card w-inline-block">
+                  <img src="/news/reelly-6-1-new-off-plan-filters-dubai/cover.jpg" loading="lazy" alt="Reelly 6.1: New Off-Plan Filters and Smarter Sales Offers for Dubai Agents" className="agents-blog-img" />
+                  <div className="agents-blog-description-block">
+                    <div className="agents-blog-data-blog">
+                      <div>
+                        27.11.26
+                      </div>
+                    </div>
+                    <h4 className="agents-h4">
+                      Reelly 6.1: New Off-Plan Filters and Smarter Sales Offers for Dubai Agents
+                    </h4>
+                    <div className="agents-blog-description w-dyn-bind-empty"></div>
+                    <div className="agents-button-blog">
+                      <div>
+                        Read blog
+                      </div>
+                      <div className="code-embed-23 w-embed">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          {" "}
+                          <path d="M9 18L15 12L9 6" stroke="#3C5DFF" strokeWidth="1.33" strokeLinecap="round" strokeLinejoin="round"></path>
+                          {" "}
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div role="listitem" className="w-dyn-item">
                 <a href="/blog-posts/reelly-mcp-server-dubai-off-plan-claude-chatgpt" className="agents-blog-card w-inline-block">
                   <img src="/news/reelly-mcp-server-dubai-off-plan-claude-chatgpt/cover.jpg" loading="lazy" alt="Reelly MCP Server Is Live: Search Dubai Off-Plan Projects Inside Claude and ChatGPT" className="agents-blog-img" />
                   <div className="agents-blog-description-block">
@@ -280,36 +308,6 @@ export default function AgentsSection() {
                     </h4>
                     <div className="agents-blog-description">
                       Middle East nominations are closed — Regional Finalists for Founder of the Year are announced, kicking off the next phase toward the global stage‍
-                    </div>
-                    <div className="agents-button-blog">
-                      <div>
-                        Read blog
-                      </div>
-                      <div className="code-embed-23 w-embed">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                          {" "}
-                          <path d="M9 18L15 12L9 6" stroke="#3C5DFF" strokeWidth="1.33" strokeLinecap="round" strokeLinejoin="round"></path>
-                          {" "}
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div role="listitem" className="w-dyn-item">
-                <a href="/blog-posts/reelly-expands-strategic-partnership-in-abu-dhabi" className="agents-blog-card w-inline-block">
-                  <img src="/cdn/62a47d8c21acef8236283091/699fb70ae7ca50b27cef2a7a_Rectangle-144504.png" loading="lazy" alt="" sizes="(max-width: 767px) 100vw, (max-width: 991px) 727px, 940px" srcSet="/cdn/62a47d8c21acef8236283091/699fb70ae7ca50b27cef2a7a_Rectangle-144504-p-500.png 500w, /cdn/62a47d8c21acef8236283091/699fb70ae7ca50b27cef2a7a_Rectangle-144504.png 1524w" className="agents-blog-img" />
-                  <div className="agents-blog-description-block">
-                    <div className="agents-blog-data-blog">
-                      <div>
-                        26.2.26
-                      </div>
-                    </div>
-                    <h4 className="agents-h4">
-                      Reelly Expands Strategic Partnership in Abu Dhabi
-                    </h4>
-                    <div className="agents-blog-description">
-                      Reelly is expanding in Abu Dhabi, strengthening ties with Ohana Development as part of its strategy to build direct partnerships with leading UAE developers.
                     </div>
                     <div className="agents-button-blog">
                       <div>
