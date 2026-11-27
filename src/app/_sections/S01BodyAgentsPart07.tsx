@@ -31,6 +31,34 @@ export default function S01BodyAgentsPart07() {
           <div id="blog-slider" data-w-id="d36f9414-c277-5ace-7616-fb4958c9ce17" style={{ opacity: "0" }} className="collection-list-wrapper-6 w-dyn-list">
             <div role="list" className="collection-list-10 w-dyn-items">
               <div role="listitem" className="w-dyn-item">
+                <a href="/blog-posts/reelly-mcp-server-dubai-off-plan-claude-chatgpt" className="agents-blog-card w-inline-block">
+                  <img src="/news/reelly-mcp-server-dubai-off-plan-claude-chatgpt/cover.jpg" loading="lazy" alt="Reelly MCP Server Is Live: Search Dubai Off-Plan Projects Inside Claude and ChatGPT" className="agents-blog-img" />
+                  <div className="agents-blog-description-block">
+                    <div className="agents-blog-data-blog">
+                      <div>
+                        Nov 27, 2026
+                      </div>
+                    </div>
+                    <h4 className="agents-h4">
+                      Reelly MCP Server Is Live: Search Dubai Off-Plan Projects Inside Claude and ChatGPT
+                    </h4>
+                    <div className="agents-blog-description w-dyn-bind-empty"></div>
+                    <div className="agents-button-blog">
+                      <div>
+                        Read more
+                      </div>
+                      <div className="code-embed-23 w-embed">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                          {" "}
+                          <path d="M9 18L15 12L9 6" stroke="#3C5DFF" strokeWidth="1.33" strokeLinecap="round" strokeLinejoin="round"></path>
+                          {" "}
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div role="listitem" className="w-dyn-item">
                 <a href="/blog-posts/reelly-brm-is-live-savills-is-in" className="agents-blog-card w-inline-block">
                   <img src="/cdn/62a47d8c21acef8236283091/6a630961b04755cb676f9cfa_image-229.jpg" loading="lazy" alt="" sizes="(max-width: 767px) 100vw, (max-width: 991px) 95vw, 940px" srcSet="/cdn/62a47d8c21acef8236283091/6a630961b04755cb676f9cfa_image-229-p-500.jpg 500w, /cdn/62a47d8c21acef8236283091/6a630961b04755cb676f9cfa_image-229-p-800.jpg 800w, /cdn/62a47d8c21acef8236283091/6a630961b04755cb676f9cfa_image-229.jpg 992w" className="agents-blog-img" />
                   <div className="agents-blog-description-block">
@@ -282,36 +310,6 @@ export default function S01BodyAgentsPart07() {
                     </h4>
                     <div className="agents-blog-description">
                       Reelly is expanding in Abu Dhabi, strengthening ties with Ohana Development as part of its strategy to build direct partnerships with leading UAE developers.
-                    </div>
-                    <div className="agents-button-blog">
-                      <div>
-                        Read more
-                      </div>
-                      <div className="code-embed-23 w-embed">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                          {" "}
-                          <path d="M9 18L15 12L9 6" stroke="#3C5DFF" strokeWidth="1.33" strokeLinecap="round" strokeLinejoin="round"></path>
-                          {" "}
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-              <div role="listitem" className="w-dyn-item">
-                <a href="/blog-posts/reelly-ai-receives-prestigious-property-finder-award" className="agents-blog-card w-inline-block">
-                  <img src="/cdn/62a47d8c21acef8236283091/699fbb3de27fca046f04f2d3_Rectangle-144506.png" loading="lazy" alt="" sizes="(max-width: 767px) 100vw, (max-width: 991px) 95vw, 940px" srcSet="/cdn/62a47d8c21acef8236283091/699fbb3de27fca046f04f2d3_Rectangle-144506-p-500.png 500w, /cdn/62a47d8c21acef8236283091/699fbb3de27fca046f04f2d3_Rectangle-144506-p-800.png 800w, /cdn/62a47d8c21acef8236283091/699fbb3de27fca046f04f2d3_Rectangle-144506.png 1524w" className="agents-blog-img" />
-                  <div className="agents-blog-description-block">
-                    <div className="agents-blog-data-blog">
-                      <div>
-                        Feb 26, 2026
-                      </div>
-                    </div>
-                    <h4 className="agents-h4">
-                      Reelly AI Receives Prestigious Property Finder Award
-                    </h4>
-                    <div className="agents-blog-description">
-                      Reelly AI has been honored with one of the UAE’s most prestigious awards in the real estate sector — recognition from Property Finder in its category.
                     </div>
                     <div className="agents-button-blog">
                       <div>

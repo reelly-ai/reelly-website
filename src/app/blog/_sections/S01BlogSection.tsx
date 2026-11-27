@@ -46,14 +46,14 @@ export default function S01BlogSection() {
             <div className="w-dyn-list">
               <div role="list" className="w-dyn-items">
                 <div role="listitem" className="w-dyn-item">
-                  <a href="/blog-posts/reelly-brm-is-live-savills-is-in" className="blog-news-card w-inline-block">
-                    <img src="/cdn/62a47d8c21acef8236283091/6a630961b04755cb676f9cfa_image-229.jpg" loading="lazy" alt="" sizes="(max-width: 767px) 100vw, (max-width: 991px) 95vw, 940px" srcSet="/cdn/62a47d8c21acef8236283091/6a630961b04755cb676f9cfa_image-229-p-500.jpg 500w, /cdn/62a47d8c21acef8236283091/6a630961b04755cb676f9cfa_image-229-p-800.jpg 800w, /cdn/62a47d8c21acef8236283091/6a630961b04755cb676f9cfa_image-229.jpg 992w" className="blog-news-img" />
+                  <a href="/blog-posts/reelly-mcp-server-dubai-off-plan-claude-chatgpt" className="blog-news-card w-inline-block">
+                    <img src="/news/reelly-mcp-server-dubai-off-plan-claude-chatgpt/cover.jpg" loading="lazy" alt="Reelly MCP Server Is Live: Search Dubai Off-Plan Projects Inside Claude and ChatGPT" className="blog-news-img" />
                     <div className="blog-news-card-info-block">
                       <div className="blog-articles-category">
-                        Developers
+                        Product
                       </div>
                       <h2 className="blog-h2-block">
-                        Reelly Launches BRM: A New Tool for Developers
+                        Reelly MCP Server Is Live: Search Dubai Off-Plan Projects Inside Claude and ChatGPT
                       </h2>
                       <div className="w-dyn-bind-empty"></div>
                     </div>
@@ -63,6 +63,19 @@ export default function S01BlogSection() {
             </div>
             <div className="collection-list-wrapper-8 w-dyn-list">
               <div role="list" className="w-dyn-items">
+                <div role="listitem" className="w-dyn-item">
+                  <a href="/blog-posts/reelly-mcp-server-dubai-off-plan-claude-chatgpt" className="blog-articles-block _1 w-inline-block">
+                    <img src="/news/reelly-mcp-server-dubai-off-plan-claude-chatgpt/cover.jpg" loading="lazy" alt="Reelly MCP Server Is Live: Search Dubai Off-Plan Projects Inside Claude and ChatGPT" className="blog-articles-img" />
+                    <div>
+                      <div className="blog-articles-category">
+                        Product
+                      </div>
+                      <p className="blog-articles-paragraph">
+                        Reelly MCP Server Is Live: Search Dubai Off-Plan Projects Inside Claude and ChatGPT
+                      </p>
+                    </div>
+                  </a>
+                </div>
                 <div role="listitem" className="w-dyn-item">
                   <a href="/blog-posts/reelly-brm-is-live-savills-is-in" className="blog-articles-block _1 w-inline-block">
                     <img src="/cdn/62a47d8c21acef8236283091/6a630961b04755cb676f9cfa_image-229.jpg" loading="lazy" alt="" sizes="(max-width: 767px) 100vw, (max-width: 991px) 95vw, 940px" srcSet="/cdn/62a47d8c21acef8236283091/6a630961b04755cb676f9cfa_image-229-p-500.jpg 500w, /cdn/62a47d8c21acef8236283091/6a630961b04755cb676f9cfa_image-229-p-800.jpg 800w, /cdn/62a47d8c21acef8236283091/6a630961b04755cb676f9cfa_image-229.jpg 992w" className="blog-articles-img" />
@@ -180,19 +193,6 @@ export default function S01BlogSection() {
                     </div>
                   </a>
                 </div>
-                <div role="listitem" className="w-dyn-item">
-                  <a href="/blog-posts/reelly-ai-receives-prestigious-property-finder-award" className="blog-articles-block _1 w-inline-block">
-                    <img src="/cdn/62a47d8c21acef8236283091/699fbb3de27fca046f04f2d3_Rectangle-144506.png" loading="lazy" alt="" sizes="(max-width: 767px) 100vw, (max-width: 991px) 95vw, 940px" srcSet="/cdn/62a47d8c21acef8236283091/699fbb3de27fca046f04f2d3_Rectangle-144506-p-500.png 500w, /cdn/62a47d8c21acef8236283091/699fbb3de27fca046f04f2d3_Rectangle-144506-p-800.png 800w, /cdn/62a47d8c21acef8236283091/699fbb3de27fca046f04f2d3_Rectangle-144506.png 1524w" className="blog-articles-img" />
-                    <div>
-                      <div className="blog-articles-category">
-                        Awards
-                      </div>
-                      <p className="blog-articles-paragraph">
-                        Reelly AI Receives Prestigious Property Finder Award
-                      </p>
-                    </div>
-                  </a>
-                </div>
               </div>
             </div>
           </div>
@@ -203,6 +203,16 @@ export default function S01BlogSection() {
             <div className="blog-list-articles-block">
               <div className="w-dyn-list">
                 <div role="list" className="w-dyn-items">
+                  <div role="listitem" className="w-dyn-item">
+                    <a href="/blog-posts/reelly-mcp-server-dubai-off-plan-claude-chatgpt" className="blog-articles-block w-inline-block">
+                      <div className="blog-articles-category">
+                        Product
+                      </div>
+                      <p className="blog-articles-paragraph">
+                        Reelly MCP Server Is Live: Search Dubai Off-Plan Projects Inside Claude and ChatGPT
+                      </p>
+                    </a>
+                  </div>
                   <div role="listitem" className="w-dyn-item">
                     <a href="/blog-posts/reelly-brm-is-live-savills-is-in" className="blog-articles-block w-inline-block">
                       <div className="blog-articles-category">
@@ -290,16 +300,6 @@ export default function S01BlogSection() {
                       </div>
                       <p className="blog-articles-paragraph">
                         Founder of the Year – Middle East Finalists Announced
-                      </p>
-                    </a>
-                  </div>
-                  <div role="listitem" className="w-dyn-item">
-                    <a href="/blog-posts/reelly-ai-receives-prestigious-property-finder-award" className="blog-articles-block w-inline-block">
-                      <div className="blog-articles-category">
-                        Awards
-                      </div>
-                      <p className="blog-articles-paragraph">
-                        Reelly AI Receives Prestigious Property Finder Award
                       </p>
                     </a>
                   </div>
