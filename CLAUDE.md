@@ -26,6 +26,9 @@ Migration rules
 - Use plain `<a>` links between legacy pages (the Webflow runtime needs a full page load).
 - The product app (sign in/up) is a separate site: soft.reelly.io.
 
+News (blog posts)
+- To add or edit a news post, follow `docs/NEWS.md` step by step: a post is a folder in `src/app/blog-posts/<slug>/` plus a card in every list that shows posts (`/blog`, home page, shared blog slider).
+
 Forms
 - Webflow forms are intercepted by `src/lib/formBridge.ts` and posted to `src/app/api/forms/route.ts`, which forwards them server-to-server to the Reelly Integrations service (`POST /webhooks/website`, repo "Reelly Integrations & Automatiosation", module `integrations/website_kommo.py`). That service creates the Kommo CRM lead; which pipeline/stage each form lands in is the `ROUTES` table there, keyed by the form's `data-name`. No Zapier.
 - Env vars: `INTEGRATIONS_URL` (service base URL) and `INTEGRATIONS_WEBHOOK_SECRET` (= `WEBSITE_WEBHOOK_SECRET` on the service).
