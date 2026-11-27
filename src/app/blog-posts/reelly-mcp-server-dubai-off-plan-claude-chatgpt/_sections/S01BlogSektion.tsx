@@ -28,7 +28,7 @@ export default function S01BlogSektion() {
               </p>
             </div>
           </div>
-          <img src="/news/reelly-mcp-server-dubai-off-plan-claude-chatgpt/cover.jpg" loading="lazy" id="w-node-b256a4d2-9b0f-df5e-ac3e-4c54db29b678-54a61e8f" alt="Reelly MCP server: Dubai off-plan data in Claude and ChatGPT, with a broker query and a generated client PDF" className="blog-img" />
+          <img src="/news/reelly-mcp-server-dubai-off-plan-claude-chatgpt/cover.jpg" loading="lazy" id="w-node-b256a4d2-9b0f-df5e-ac3e-4c54db29b678-54a61e8f" alt="Reelly is now inside Claude and ChatGPT" className="blog-img" />
         </div>
       </div>
     </div>
